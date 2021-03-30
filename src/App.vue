@@ -1,23 +1,20 @@
 <template>
-  <h1>标题</h1>
   <router-view />
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref, provide } from 'vue'
 
 export default defineComponent({
   name: 'App',
+  setup(){
+    const width = document.documentElement.clientWidth
+    const asideVisible = ref(width > 500)//默认值
+    provide('asideVisible', asideVisible)
+  }
 })
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
