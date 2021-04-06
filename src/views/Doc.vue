@@ -68,7 +68,7 @@ export default {
       left: 0;
       top: 0;
       bottom: 0;
-      margin-top: 80px;
+      margin-top: 70px;
       height: auto;
       width: 260px;
       overflow-x: hidden;
@@ -86,7 +86,7 @@ export default {
         font-weight: 700;
       }
 
-      > ol {
+      > ul {
         > li {
           position: relative;
           width: 100%;
