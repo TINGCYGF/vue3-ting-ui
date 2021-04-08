@@ -60,7 +60,7 @@ $blue: #40a9ff;
 $red: #f56c6c;
 // 角度参数
 $radius: 10%;
-$roundRadius: 50%;
+$roundRadius: $h/2;
 $grey: #909399;
 
 .ting-button {
@@ -164,6 +164,13 @@ $grey: #909399;
     color: #fff;
     background-color: #ddd;
     border: none;
+    &:hover,
+    &:focus {
+      cursor: not-allowed;
+      color: #fff;
+      background-color: #ddd;
+      border: none;
+    }
   }
 
   > .ting-loadingIndicator {
@@ -175,7 +182,14 @@ $grey: #909399;
     border-color: lighten($blue, 20%) lighten($blue, 10%) $blue transparent;
     border-style: solid;
     border-width: 2px;
-    animation: kaite-spin 1s infinite linear;
+    animation: ting-spin 1s infinite linear;
+    &:hover,
+    &:focus {
+      cursor: not-allowed;
+      color: #fff;
+      background-color: #ddd;
+      border: none;
+    }
   }
   @keyframes ting-spin {
     0% {

@@ -1,5 +1,5 @@
 <template>
-  <Button level="primary">按钮</Button>
+  <Button loading round>按钮</Button>
 </template>
 
 <script>
