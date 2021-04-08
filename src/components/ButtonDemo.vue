@@ -1,10 +1,12 @@
 <template>
-  <div>Button示例</div>
+  <Button />
 </template>
 
 <script>
+import Button from "../lib/Button";
 export default {
-  name: "DialogDemo"
+  name: "DialogDemo",
+  components: {Button}
 }
 </script>
 
