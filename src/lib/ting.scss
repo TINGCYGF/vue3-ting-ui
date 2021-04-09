@@ -1,0 +1,103 @@
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    border-bottom: 1px solid ;
+    cursor: pointer;
+  }
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
+button {
+  text-transform: none;
+}
+button,input {
+  overflow: visible;
+}
+a, area, button, label, select, summary, textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+[class^="kaite-"],[class*=" kaite-"]{
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: -apple-system, "Noto Sans", "Helvetica Neue",
+  Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC",
+  "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC",
+  "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei",
+  "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+
+}
+.first-title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.second-title {
+  h2 {
+    position: relative;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    &::before {
+      content: "#";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -0.7em;
+      color: #ff1f1f;
+      font-weight: 700;
+    }
+  }
+  p {
+    font-size: 0.9em;
+    span {
+      font-weight: 700;
+      color: #ff1f1f;
+    }
+  }
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all .3s linear;
+}
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(-285px);
+}
+
+
+.fade-enter-active,
+.fade-leave-active{
+  transition: all .25s linear;
+}
+.fade-enter-from,
+.fade-leave-to{
+  transform: rotateX(-90deg);
+}
+
+
+@keyframes kaite-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes button-hover {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-3px);
+  }
+}

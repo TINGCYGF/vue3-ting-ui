@@ -59,7 +59,7 @@ $color: #333;
 $blue: #40a9ff;
 $red: #f56c6c;
 // 角度参数
-$radius: 10%;
+$radius: 4px;
 $roundRadius: $h/2;
 $grey: #909399;
 

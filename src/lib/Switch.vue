@@ -1,6 +1,6 @@
 <template>
   <button
-    class="switch"
+    class="ting-switch"
     @click="toggle"
     :class="{ 'checked': value }"
     :disabled="loading ? true : disabled"
@@ -34,10 +34,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $h: 22px;
 $h2: $h - 4px;
-.switch {
+.ting-switch {
   position: relative;
   display: inline-block;
   width: $h * 2;
