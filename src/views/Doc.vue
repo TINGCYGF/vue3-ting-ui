@@ -8,6 +8,12 @@
           <li>
             <router-link to="/doc/intro">介绍</router-link>
           </li>
+          <li>
+            <router-link to="/doc/install">安装</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/get-started">快速使用</router-link>
+          </li>
         </ul>
 
         <h2>组件列表</h2>
@@ -32,7 +38,7 @@
   </div>
 </template>
 <script lang="ts">
-import Topnav from "../components/Topnav.vue";
+import Topnav from "./Topnav.vue";
 import { inject, Ref } from 'vue'
 
 export default {
@@ -79,9 +85,9 @@ export default {
       padding-bottom: 32px;
 
       > h2 {
-        margin-bottom: 4px;
+        margin-top: 6px;
         line-height: 22px;
-        padding: 10px;
+        padding: 10px 12px;
         font-size: 16px;
         font-weight: 700;
       }
@@ -105,7 +111,7 @@ export default {
           }
 
           .router-link-active {
-            background-color: #e5f2fa;
+            background-color: #cee5f3;
             border-right: none;
 
             &:after {

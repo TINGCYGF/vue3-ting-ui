@@ -7,6 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "github-markdown-css": "^4.0.0",
     "vue": "^3.0.5",
     "vue-router": "4"
   },
@@ -14,6 +15,7 @@
     "@types/nprogress": "^0.2.0",
     "@vitejs/plugin-vue": "^1.1.5",
     "@vue/compiler-sfc": "^3.0.5",
+    "marked": "^2.0.1",
     "nprogress": "^0.2.0",
     "sass": "^1.32.8",
     "typescript": "^4.1.3",

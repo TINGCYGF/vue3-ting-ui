@@ -2,9 +2,8 @@
   <div class="topnav">
 
     <router-link to="/" class="logo">
-      LOGO
       <svg class="icon">
-        <use xlink:href="#icon-lanmei">LOGO</use>
+        <use xlink:href="#icon-caidan-2"></use>
       </svg>
     </router-link>
 

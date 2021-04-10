@@ -21,17 +21,19 @@
        </li>
        <li>
          <svg class="icon">
-           <use xlink:href="#icon-ts"></use>
+           <use xlink:href="#icon-typescript"></use>
          </svg>
          <h3>基于 TypeScript </h3>
          <p>源代码采用 TypeScript 书写（非严格检查）</p>
        </li>
        <li>
          <svg class="icon">
-           <use xlink:href="#icon-led"></use>
+           <use xlink:href="#icon-UIzhongguo"></use>
          </svg>
-         <h3>代码易读</h3>
-         <p>每个组件的源代码都极其简洁</p>
+         <h3>简约 UI</h3>
+         <p>每个组件的UI设计简约大方
+            简单易用
+         </p>
        </li>
      </ul>
    </div>
@@ -39,7 +41,7 @@
 
 </template>
 <script lang="ts">
-import Topnav from "../components/Topnav.vue";
+import Topnav from "./Topnav.vue";
 export default {
   components: {Topnav}
 }
@@ -47,8 +49,8 @@ export default {
 
 <style lang="scss" scoped>
 
-$buttonColor: #0864a9;
-$textColor: #05538c;
+$buttonColor: #155e98;
+$textColor: #2d4464;
 
 .home {
   ::v-deep(.top_nav) {
@@ -65,8 +67,10 @@ $textColor: #05538c;
     padding: 180px 0 150px;
     color: $textColor;
     background: rgb(174, 209, 228);
-    background: linear-gradient(145deg, rgba(174, 209, 228, 1) 0%, rgba(66, 125, 169, 1) 100%);
+    background: linear-gradient(145deg, rgba(174, 209, 228, 1) 0%, rgb(34, 94, 140) 100%);
     clip-path: ellipse(80% 60% at 50% 40%);
+
+
     margin: 0 auto;
 
     h1 {
@@ -76,8 +80,7 @@ $textColor: #05538c;
     }
 
     h2 {
-      text-align: right;
-      padding-right: 100px;
+      text-align: center;
       margin-top: 12px;
       font-size: 20px;
       line-height: 26px;
@@ -108,7 +111,7 @@ $textColor: #05538c;
     @media (min-width: 800px) {
       width: 800px;
       h3 {
-        font-size: 20px;
+        font-size: 16px;
       }
 
       p {
@@ -144,8 +147,9 @@ $textColor: #05538c;
         }
 
         > h3 {
+          margin-bottom: 10px;
           grid-area: title;
-          font-size: 28px;
+          font-size: 24px;
         }
 
         > p {
