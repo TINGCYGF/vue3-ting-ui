@@ -4,13 +4,10 @@
     <list default="true" id="af3aebd0-22c2-4407-a9ce-ada60ae19f42" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Topnav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Topnav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Doc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Doc.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/md.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/markdown/intro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Intro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Intro.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Topnav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Topnav.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +88,9 @@
       <workItem from="1617880929165" duration="170000" />
       <workItem from="1617881114415" duration="1827000" />
       <workItem from="1617928248511" duration="12659000" />
-      <workItem from="1618024921801" duration="16964000" />
+      <workItem from="1618024921801" duration="17060000" />
+      <workItem from="1618054368043" duration="4714000" />
+      <workItem from="1618062683154" duration="2478000" />
     </task>
     <servers />
   </component>

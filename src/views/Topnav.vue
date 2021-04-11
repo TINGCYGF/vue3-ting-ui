@@ -2,9 +2,11 @@
   <div class="topnav">
 
     <router-link to="/" class="logo">
-      <svg class="icon">
-        <use xlink:href="#icon-caidan-2"></use>
-      </svg>
+      <div>
+        <svg class="icon">
+          <use xlink:href="#icon-Ting_560"></use>
+        </svg>
+      </div>
     </router-link>
 
     <ul class="menu">
@@ -61,17 +63,26 @@ $textColor: #05538c;
   z-index: 20;
   background: #fff;
   box-shadow: 0 5px 5px rgb(51 51 51 / 10%);
-
   > .logo {
-    margin-left: 50px;
+    margin-left: 30px;
     cursor: pointer;
-    max-width: 6em;
+    max-width: 8em;
     margin-right: auto;
-
-    svg {
+    >div {
+      border-radius: 50%;
       width: 38px;
       height: 38px;
+      overflow: hidden;
+      svg {
+        position: relative;
+
+        top: -21px;
+        left: -18px;
+        width: 80px;
+        height: 80px;
+      }
     }
+
   }
 
   .menu {
