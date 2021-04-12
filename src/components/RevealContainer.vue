@@ -28,7 +28,7 @@
 <script lang="ts">
 import {computed, ref} from "vue";
 import 'prismjs/'
-import 'prismjs/themes/prism.css'
+import 'prismjs/themes/prism-coy.css'
 const Prism = (window as any).Prism
 
 export default {
@@ -122,6 +122,7 @@ export default {
     border: 1px solid #ebebeb;
     border-radius: 3px;
     transition: .2s;
+    max-width: 700px;
 
     &:hover {
       box-shadow: 0 0 8px 0 rgba(232, 237, 250, .6), 0 2px 4px 0 rgba(232, 237, 250, .5);

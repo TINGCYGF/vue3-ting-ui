@@ -128,7 +128,6 @@ $textColor: #2d4464;
       justify-content: space-around;
 
       > li {
-
         width: 300px;
         margin: 16px 0;
         display: grid;
