@@ -1,8 +1,7 @@
 <template>
   <button class="ting-button"
           :class="classes"
-          :disabled="loading ? true : disabled"
-  >
+          :disabled="loading ? true : disabled">
     <span v-if="loading" class="ting-loadingIndicator"></span>
     <slot />
   </button>
@@ -34,7 +33,7 @@
         default: false,
       },
     },
-    setup(props: { round: any; size: any; level: any; }) {
+    setup(props) {
       const { round, size, level } = props;
       const classes = computed(() => {
         return {

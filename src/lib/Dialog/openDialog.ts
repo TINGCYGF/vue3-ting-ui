@@ -1,6 +1,7 @@
 import Dialog from "./Dialog.vue";
 import { createApp, h } from "vue";
-export const openDialog = (options: { title: any; content: any; ok: any; cancel: any; bottomBtn: any; }) => {
+// @ts-ignore
+export const openDialog = (options) => {
   const { title, content, ok, cancel, bottomBtn } = options;
   const div = document.createElement("div");
   document.body.appendChild(div);
@@ -15,7 +16,8 @@ export const openDialog = (options: { title: any; content: any; ok: any; cancel:
         Dialog,
         {
           visible: true,
-          "onUpdate:visible": (newVisible: any) => {
+          // @ts-ignore
+          "onUpdate:visible": (newVisible) => {
             if (newVisible === false) {
               close();
             }
