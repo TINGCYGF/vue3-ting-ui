@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af3aebd0-22c2-4407-a9ce-ada60ae19f42" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Button/ButtonDisabled.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button/ButtonLoading.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button/ButtonNormal.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button/ButtonRound.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button/ButtonSize.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/md.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/markdown/intro.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Intro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Intro.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Topnav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Topnav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/_var.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ButtonDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/ButtonDemo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DialogDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialog/DialogDemo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DocDemo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SwitchDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Switch/SwitchDemo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TabsDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tabs/TabsDemo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Button" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="D:\GZWJ\Web\Vue\vue3-ting-ui\node_modules\typescript\lib" />
@@ -54,14 +67,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\components\Button" />
       <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\assets\scss" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src" />
-      <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\views" />
-      <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\lib\Switch" />
-      <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\lib\Tab" />
-      <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\lib\Dialog" />
+      <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\components\Tabs" />
+      <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\components\Switch" />
+      <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\components\Dialog" />
+      <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\components\Button" />
+      <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -91,6 +105,8 @@
       <workItem from="1618024921801" duration="17060000" />
       <workItem from="1618054368043" duration="4714000" />
       <workItem from="1618062683154" duration="2478000" />
+      <workItem from="1618132840783" duration="269000" />
+      <workItem from="1618187043571" duration="15893000" />
     </task>
     <servers />
   </component>
