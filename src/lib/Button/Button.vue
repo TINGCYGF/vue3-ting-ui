@@ -1,7 +1,8 @@
 <template>
   <button class="ting-button"
           :class="classes"
-          :disabled="loading ? true : disabled">
+          :disabled="loading ? true : disabled"
+  >
     <span v-if="loading" class="ting-loadingIndicator"></span>
     <slot />
   </button>

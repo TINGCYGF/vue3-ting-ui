@@ -15,9 +15,6 @@ import ButtonLoading from "./ButtonLoading.vue";
 export default {
   components: { RevealContainer },
   setup() {
-    // console.log();
-    // console.log("-------------------------");
-    // document.body.scrollTop = 0;
     return {
       ButtonNormal,
       ButtonSize,
