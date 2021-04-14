@@ -2027,6 +2027,16 @@ vue-tsc@^0.0.8:
   dependencies:
     unzipper latest
 
+vue3-ting-ui@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.2.tgz#1a250d13994137972a947aca9ca0c9f07d3fcebf"
+  integrity sha512-5U8aNOfPs6QB+GXzqMMP5SNybZjmOhFSDy4YACCeZSy2YoD1mi1GTtY8bSGChwWZirVaKxQ+K50pBPeXMzKV1w==
+  dependencies:
+    github-markdown-css "^4.0.0"
+    prismjs "^1.23.0"
+    vue "^3.0.5"
+    vue-router "4"
+
 vue@^3.0.5:
   version "3.0.7"
   resolved "https://registry.npmjs.org/vue/-/vue-3.0.7.tgz#8bcff51f8be570f9e4ce8cc5f52e2ab0fe3c74a1"

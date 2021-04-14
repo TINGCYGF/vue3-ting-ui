@@ -99,7 +99,7 @@ $h2: $h - 4px;
     }
   }
   &.checked {
-    background-color: #1890ff;
+    background-color: #00b894;
     > span {
       left: calc(100% - #{$h2} - 2px);
     }

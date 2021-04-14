@@ -1,33 +1,32 @@
 <template>
-  <input
-    class="ting-input"
-    :class="{
+  <div class="ting">
+    <input
+      class="ting-input"
+      :class="{
       disabled: disabled === true || disabled === 'true',
       readonly: readonly === true || disabled === 'true',
-
     }"
-    :value="value"
-    :error="error"
-    :disabled="disabled === true || disabled === 'true'"
-    :readonly="readonly === true || readonly === 'true'"
-    :placeholder="placeholder"
-    :type="type"
-    @change="$emit('change', $event.target.value)"
-    @input="$emit('update:value', $event.target.value)"
-    @focus="$emit('focus', $event.target.value)"
-    @blur="$emit('blur', $event.target.value)"
-    v-bind="$attrs"
-  />
-  <template v-if="error !== false " class="ting-error-icon">
-    <Icon name="prompt" class="ting-icon" style="color: #c61e1e"></Icon>
-    <span v-if="error !== true && 'true' " class="ting-error">{{error}}</span>
-  </template>
-  <!-- clearable -->
-  <div v-if="clearable" class="ting-clear-icon" :class="{active: value !== ''}" @click="clearValue">
-    <Icon name="close" class="ting-icon"></Icon>
+      :value="value"
+      :error="error"
+      :disabled="disabled === true || disabled === 'true'"
+      :readonly="readonly === true || readonly === 'true'"
+      :placeholder="placeholder"
+      :type="type"
+      @change="$emit('change', $event.target.value)"
+      @input="$emit('update:value', $event.target.value)"
+      @focus="$emit('focus', $event.target.value)"
+      @blur="$emit('blur', $event.target.value)"
+      v-bind="$attrs"
+    />
+    <!-- clearable -->
+    <Icon v-if="clearable" class="ting-clear-icon" :class="{active: value !== ''}" @click="clearValue" name="close" ></Icon>
+
+    <template v-if="error !== false " class="ting-error-icon">
+      <Icon name="prompt" class="ting-icon" style="color: #c61e1e"></Icon>
+      <span v-if="error !== true && 'true' " class="ting-error">{{error}}</span>
+    </template>
+
   </div>
-
-
 
 </template>
 
@@ -77,52 +76,59 @@ export default {
 </script>
 
 <style lang="scss">
-$height: 32px;
-$border-color: #999;
+$height: 36px;
+$border-color: #999999;
 $border-color-hover: #666;
 $border-radius: 4px;
-$font-size: 12px;
+$font-size: 14px;
 $box-shadow-color: rgba(93, 93, 93, 0.5);
 $color-placeholder: #aeaeae;
-.ting-input{
-  font-size: $font-size;
+.ting{
+  position: relative;
+  white-space: nowrap;
   display: inline-block;
-  height: $height;
-  border: 1px solid $border-color;
-  padding: 0 8px;
-  border-radius: $border-radius;
-  margin: 0.5em;
-
-  &:hover {
-    border-color: $border-color-hover;
-  }
-  &:focus{
-    box-shadow: inset 0 1px 1px $box-shadow-color;
-    outline: none;
-  }
-  &.readonly{
-    border-color: #9b9b9b;
-    color: #929292;
-  }
-  &.disabled{
-    cursor: not-allowed;
-    border-color: #b0afaf;
-    color: #8d8d8d;
-  }
-  &::placeholder {
-    color: $color-placeholder;
-  }
-}
-.ting-error {
-  font-size: 0.6em;
-  color: #dd4c4c;
-}
-.ting-clear-icon{
-  display: none;
-  &.active{
+  .ting-input{
+    font-size: $font-size;
     display: inline-block;
-    position: relative;
-    right: 26px;
+    height: $height;
+    border: 1px solid $border-color;
+    padding: 0 8px;
+    border-radius: $border-radius;
+    margin: 0.5em;
+
+    &:hover {
+      border-color: $border-color-hover;
+    }
+    &:focus{
+      box-shadow: inset 0 1px 1px $box-shadow-color;
+      outline: none;
+    }
+    &.readonly{
+      border-color: #9b9b9b;
+      color: #929292;
+    }
+    &.disabled{
+      cursor: not-allowed;
+      border-color: #b0afaf;
+      color: #8d8d8d;
+    }
+    &::placeholder {
+      color: $color-placeholder;
+    }
+  }
+  .ting-error {
+    font-size: 0.6em;
+    color: #dd4c4c;
+  }
+  .ting-clear-icon{
+    display: none;
+    &.active{
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 12px;
+    }
   }
 }
 

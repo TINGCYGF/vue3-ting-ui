@@ -93,8 +93,10 @@ $textColor: #05538c;
     > li {
       margin: 0 1em;
       > a{
-        color: inherit;
-
+        color: rgb(25, 188, 156);
+        &:hover{
+          text-decoration:underline
+        }
       }
     }
   }

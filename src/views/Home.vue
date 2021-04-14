@@ -49,8 +49,8 @@ export default {
 
 <style lang="scss" scoped>
 
-$buttonColor: #155e98;
-$textColor: #2d4464;
+$buttonColor: rgb(52, 176, 176);
+$textColor: rgb(29, 110, 94);
 
 .home {
   ::v-deep(.top_nav) {
@@ -67,10 +67,8 @@ $textColor: #2d4464;
     padding: 180px 0 150px;
     color: $textColor;
     background: rgb(174, 209, 228);
-    background: linear-gradient(145deg, rgba(174, 209, 228, 1) 0%, rgb(34, 94, 140) 100%);
+    background: linear-gradient(135deg, rgb(209, 238, 238) 0%, rgb(1, 171, 166) 100%);
     clip-path: ellipse(80% 60% at 50% 40%);
-
-
     margin: 0 auto;
 
     h1 {
@@ -99,6 +97,9 @@ $textColor: #2d4464;
         color: #fff;
         border-radius: 6px;
         border: none;
+        &:hover{
+          text-decoration:underline
+        }
       }
 
     }

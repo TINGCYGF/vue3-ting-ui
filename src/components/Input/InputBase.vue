@@ -13,14 +13,15 @@
   </label>
 
   <label>
-    <Input :value="'点击清除'" clearable placeholder="请输入" ></Input>
+    <Input :value="value" clearable placeholder="请输入" ></Input>
   </label>
 
   <label>
-    <Input v-model:value="value" clearable placeholder="请输入" ></Input>
+    <Input v-model:value="value" @change="change" clearable placeholder="请输入" ></Input>
   </label>
 
   <div>{{value}}</div>
+  <div>{{a}}</div>
 </template>
 
 <script lang="ts">
@@ -31,10 +32,14 @@ export default {
     Input,
   },
   setup(){
+    let a = ref(null)
     const value:string = ref(null)
     value.value = '禁用状态'
 
-    return {value}
+    const change = (e) => {
+      console.log(e);
+    }
+    return {value, change, a}
   }
 };
 </script>

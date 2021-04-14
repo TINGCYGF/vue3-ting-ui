@@ -71,7 +71,6 @@ export default {
     padding-top: 80px;
     padding-left: 156px;
 
-
     .aside_menu {
       position: fixed;
       left: 0;
@@ -108,13 +107,13 @@ export default {
             color: #333;
 
             &:hover {
-              background: #e5f2fa;
+              background: #f1ffff;
               border-bottom: none;
             }
           }
 
           .router-link-active {
-            background-color: #cee5f3;
+            background-color: #f1ffff;
             border-right: none;
 
             &:after {
@@ -123,7 +122,7 @@ export default {
               top: 0;
               right: 0;
               height: 100%;
-              border-right: 3px solid #6b9ab8;
+              border-right: 3px solid #00cec9;
             }
           }
         }

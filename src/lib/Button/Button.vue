@@ -56,8 +56,7 @@ $border-color: #333;
 // 默认字体颜色
 $color: #333;
 // 颜色参数
-$blue: #40a9ff;
-$red: #f56c6c;
+$ting-color: #4ff3d4;
 // 角度参数
 $radius: 4px;
 $roundRadius: $h/2;
@@ -103,24 +102,24 @@ $grey: #909399;
   }
 
   &.ting-level-default {
-    background: #fff;
-    border: 1px solid #222831;
-    color: #4a4444;
+    color: #fff;
+    border-color: #57606f;
+    background-color: #747d8c;
     &:hover,
     &:focus {
-      color: #fff;
-      border-color: #57606f;
-      background-color: #747d8c;
+      color: #4a4444;
+      background: #fff;
+      border: 1px solid #222831;
     }
   }
   &.ting-level-primary {
-    background: #70a1ff;
-    border: 1px solid #70a1ff;
+    background: #26d6d2;
+    border: 1px solid #26d6d2;
     color: #fff;
     &:hover,
     &:focus {
-      color: #1e90ff;
-      border-color: #1e90ff;
+      color: #00b894;
+      border-color: #00b894;
       background: #fff;
     }
   }
@@ -136,13 +135,13 @@ $grey: #909399;
     }
   }
   &.ting-level-warning {
-    background: #f7e4a4;
-    border: 1px solid #fce38a;
+    background: #fbff78;
+    border: 1px solid #fbff78;
     color: #4a4444;
     &:hover,
     &:focus {
-      color: #ffc107;
-      border-color: #ffc107;
+      color: #ffe607;
+      border-color: #ffe607;
       background: #fff;
     }
   }
@@ -179,7 +178,7 @@ $grey: #909399;
     display: inline-block;
     margin-right: 4px;
     border-radius: 8px;
-    border-color: lighten($blue, 20%) lighten($blue, 10%) $blue transparent;
+    border-color: lighten($ting-color, 20%) lighten($ting-color, 10%) $ting-color transparent;
     border-style: solid;
     border-width: 2px;
     animation: ting-spin 1s infinite linear;

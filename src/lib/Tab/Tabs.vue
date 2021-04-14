@@ -94,7 +94,7 @@ export default {
 </script>
 
 <style lang="scss">
-$blue: #40a9ff;
+$ting-color: #00b894;
 $color: #333;
 $border-color: #d9d9d9;
 
@@ -118,14 +118,14 @@ $border-color: #d9d9d9;
       }
 
       &.selected {
-        color: $blue;
+        color: $ting-color;
       }
     }
 
     &-indicator {
       position: absolute;
       height: 3px;
-      background: $blue;
+      background: $ting-color;
       left: 0;
       bottom: -1px;
       transition: all 0.25s;
