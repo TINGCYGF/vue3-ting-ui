@@ -5,7 +5,7 @@
   <label>
     <Input :value="value"  placeholder="请输入" disabled></Input>
   </label>
-  <label>
+  <label>警告
     <Input :value="value"  placeholder="请输入" readonly></Input>
   </label>
   <label>
@@ -20,16 +20,20 @@
     <Input v-model:value="value" @change="change" clearable placeholder="请输入" ></Input>
   </label>
 
+  <Password v-model:value="value"></Password>
+
   <div>{{value}}</div>
   <div>{{a}}</div>
 </template>
 
 <script lang="ts">
 import Input from "../../lib/Input/Input.vue";
+import Password from "../../lib/Input/Password.vue"
 import {ref} from "vue";
 export default {
   components: {
     Input,
+    Password,
   },
   setup(){
     let a = ref(null)

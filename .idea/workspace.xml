@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="af3aebd0-22c2-4407-a9ce-ada60ae19f42" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Input/InputBase.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input/InputBase.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RevealContainer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RevealContainer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Button/Button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Button/Button.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/Input/Input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Input/Input.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Switch/Switch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Switch/Switch.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Tab/Tabs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Tab/Tabs.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ting.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ting.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Doc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Doc.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Topnav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Topnav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +93,7 @@
       <workItem from="1618187043571" duration="17907000" />
       <workItem from="1618225893934" duration="11579000" />
       <workItem from="1618292169002" duration="14406000" />
-      <workItem from="1618360118816" duration="8308000" />
+      <workItem from="1618360118816" duration="11386000" />
     </task>
     <servers />
   </component>

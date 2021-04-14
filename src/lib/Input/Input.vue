@@ -12,10 +12,9 @@
       :readonly="readonly === true || readonly === 'true'"
       :placeholder="placeholder"
       :type="type"
-      @change="$emit('change', $event.target.value)"
-      @input="$emit('update:value', $event.target.value)"
-      @focus="$emit('focus', $event.target.value)"
-      @blur="$emit('blur', $event.target.value)"
+      @change="change"
+      @input="onInput"
+      @focus="focus"
       v-bind="$attrs"
     />
     <!-- clearable -->
@@ -70,7 +69,15 @@ export default {
     const clearValue = () => {
       context.emit("update:value", '');
     }
-    return {onInput, clearValue}
+
+    const change = (ev: MouseEvent) => {
+      context.emit("change", ev);
+    };
+
+    const focus = (ev: MouseEvent) => {
+      context.emit("focus", ev);
+    };
+    return {onInput, clearValue, change, focus}
   }
 }
 </script>
