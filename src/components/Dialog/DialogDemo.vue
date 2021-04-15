@@ -25,26 +25,66 @@
     <RevealContainer :component="DialogOnCode">
       <p>可以引入<code>openDialog</code>模块创建一个<code>Dialog</code>组件。</p>
     </RevealContainer>
+    <Attr :data="data"></Attr>
   </div>
 </template>
 <script lang="ts">
 import RevealContainer from "../RevealContainer.vue";
+import Attr from "../Attr.vue";
 import DialogNormal from "./DialogNormal.vue";
 import DialogOnCode from "./DialogOnCode.vue";
 import DialogTitle from "./DialogTitle.vue";
 import DialogBottom from "./DialogBottom.vue";
 import DialogOverlay from "./DialogOverlay.vue";
 
-import { ref } from "vue";
 export default {
-  components: { RevealContainer },
+  components: { RevealContainer, Attr },
   setup() {
+    const data = [
+      {
+        params: 'closeOnClickOverlay',
+        desc: '点击遮罩层关闭',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'true',
+      },
+      {
+        params: 'title',
+        desc: '自定义标题',
+        type: 'string',
+        select: '自定义标题',
+        default: 'null',
+      },
+      {
+        params: 'bottomBtn',
+        desc: '带有按钮',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'false',
+      },
+      {
+        params: 'ok',
+        desc: '确认按钮执行函数',
+        type: 'function',
+        select: 'function return false（不关闭Dialog） / function return true（关闭Dialog）',
+        default: 'null',
+      },
+      {
+        params: 'cancel',
+        desc: '取消按钮执行函数',
+        type: 'function',
+        select: 'function（均关闭Dialog）',
+        default: 'null',
+      }
+    ]
     return {
       DialogNormal,
       DialogOnCode,
       DialogOverlay,
       DialogTitle,
-      DialogBottom, };
+      DialogBottom,
+      data
+    };
   },
 };
 </script>

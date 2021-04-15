@@ -16,19 +16,37 @@
         可以使用<code>loading</code>属性，显示<code>Switch</code>组件加载状态，它接受一个<code>Boolean</code>值。
       </p>
     </RevealContainer>
+    <Attr :data="data"></Attr>
   </div>
 </template>
 <script lang="ts">
 import RevealContainer from "../RevealContainer.vue";
+import Attr from "../Attr.vue";
 import SwitchNormal from "./SwitchNormal.vue";
 import SwitchDisabled from "./SwitchDisabled.vue";
 import SwitchLoading from "./SwitchLoading.vue";
 
-import { ref } from "vue";
 export default {
-  components: { RevealContainer },
+  components: { RevealContainer, Attr },
   setup() {
-    return { SwitchNormal, SwitchDisabled, SwitchLoading };
+    const data = [
+
+      {
+        params: 'disabled',
+        desc: '禁止状态',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'false',
+      },
+      {
+        params: 'loading',
+        desc: '加载中',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'false',
+      }
+    ]
+    return { SwitchNormal, SwitchDisabled, SwitchLoading, data };
   },
 };
 </script>

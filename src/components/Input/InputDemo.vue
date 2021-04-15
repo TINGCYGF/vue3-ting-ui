@@ -34,11 +34,12 @@
         可以使用<code>v-model</code>绑定一个<code>Boolean</code>类型的变量到<code>Tabs</code>组件,指定默认<span>Tab</span>
       </p>
     </RevealContainer>
-
+    <Attr :data="data"></Attr>
   </div>
 </template>
 <script lang="ts">
 import RevealContainer from "../RevealContainer.vue";
+import Attr from "../Attr.vue";
 import InputBase from "./InputPassword.vue";
 import InputValue from "./InputValue.vue";
 import InputDisabled from "./InputDisabled.vue";
@@ -46,17 +47,47 @@ import InputReadOnly from "./InputReadOnly.vue";
 import InputError from "./InputError.vue";
 import InputClear from "./InputClear.vue";
 
-import { ref } from "vue";
 export default {
-  components: { RevealContainer },
+  components: { RevealContainer, Attr },
   setup() {
+    const data = [
+      {
+        params: 'disabled',
+        desc: '禁止状态',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'false',
+      },
+      {
+        params: 'readonly',
+        desc: '只读状态',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'false',
+      },
+      {
+        params: 'error',
+        desc: '错误提示',
+        type: 'string',
+        select: '错误提示字符串',
+        default: 'null',
+      },
+      {
+        params: 'clearable',
+        desc: '一键清除内容',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'false',
+      },
+    ]
     return {
       InputBase,
       InputValue,
       InputDisabled,
       InputReadOnly,
       InputError,
-      InputClear
+      InputClear,
+      data
     };
   },
 };

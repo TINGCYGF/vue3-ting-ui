@@ -3,30 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="af3aebd0-22c2-4407-a9ce-ada60ae19f42" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Button/ButtonDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/ButtonDemo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/ButtonDisabled.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/ButtonDisabled.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/ButtonLoading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/ButtonLoading.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/ButtonNormal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/ButtonNormal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/ButtonRound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/ButtonRound.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/ButtonSize.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/ButtonSize.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialog/DialogDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialog/DialogDemo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Input/InputBase.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input/InputPassword.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Input/InputDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input/InputDemo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RevealContainer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RevealContainer.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Switch/SwitchDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Switch/SwitchDemo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Tabs/TabsDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tabs/TabsDemo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Dialog/Dialog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Dialog/Dialog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Switch/Switch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Switch/Switch.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/TingUI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/TingUI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ting.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ting.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Doc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Doc.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Install.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Install.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/GetStarted.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Install.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Intro.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Input" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views/markdown" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="D:\GZWJ\Web\Vue\vue3-ting-ui\node_modules\typescript\lib" />
@@ -73,11 +61,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\views\markdown" />
       <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\components\Input" />
       <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\components\Tabs" />
       <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\components\Dialog" />
       <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\components\Switch" />
-      <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\components\Button" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GZWJ\Web\Vue\vue3-ting-ui\src\components\Tabs" />
@@ -119,8 +107,23 @@
       <workItem from="1618225893934" duration="11579000" />
       <workItem from="1618292169002" duration="14406000" />
       <workItem from="1618360118816" duration="28539000" />
-      <workItem from="1618446430979" duration="6276000" />
+      <workItem from="1618446430979" duration="22230000" />
     </task>
+    <task id="LOCAL-00001" summary="优化页面">
+      <created>1618452843563</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1618452843564</updated>
+    </task>
+    <task id="LOCAL-00002" summary="优化页面">
+      <created>1618452866553</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1618452866553</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +140,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="优化页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化页面" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

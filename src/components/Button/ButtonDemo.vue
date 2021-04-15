@@ -27,24 +27,64 @@
         可以使用<code>loading</code>属性来定义按钮是否加载状态，它接受一个<code>Boolean</code>值。
       </p>
     </RevealContainer>
+    <Attr :data="data"></Attr>
   </div>
 </template>
 <script lang="ts">
 import RevealContainer from "../RevealContainer.vue";
+import Attr from "../Attr.vue";
 import ButtonNormal from "./ButtonNormal.vue";
 import ButtonSize from "./ButtonSize.vue";
 import ButtonRound from "./ButtonRound.vue";
 import ButtonDisabled from "./ButtonDisabled.vue";
 import ButtonLoading from "./ButtonLoading.vue";
 export default {
-  components: { RevealContainer },
+  components: { RevealContainer, Attr },
   setup() {
+    const data = [
+      {
+        params: 'level',
+        desc: '按钮类型',
+        type: 'string',
+        select: 'default / primary / success / warning / error',
+        default: 'default',
+      },
+      {
+        params: 'size',
+        desc: '尺寸',
+        type: 'string',
+        select: 'normal / small / mini',
+        default: 'normal',
+      },
+      {
+        params: 'round',
+        desc: '圆形边框',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'false',
+      },
+      {
+        params: 'disabled',
+        desc: '禁止状态',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'false',
+      },
+      {
+        params: 'loading',
+        desc: '加载中',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'false',
+      }
+    ]
     return {
       ButtonNormal,
       ButtonSize,
       ButtonRound,
       ButtonDisabled,
       ButtonLoading,
+      data
     };
   },
 };

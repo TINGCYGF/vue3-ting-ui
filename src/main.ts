@@ -1,6 +1,7 @@
 import './assets/scss/index.scss'
 import './lib/ting.scss'
 import 'vue3-ting-ui/dist/lib/ting.css'
+import "github-markdown-css";
 
 import { createApp } from 'vue'
 import App from './App.vue'

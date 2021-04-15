@@ -5,8 +5,9 @@
      <h1>Ting UI</h1>
      <h2>基于Vue3的UI框架</h2>
      <p class="actions">
+       <a target="_blank" href="https://gitee.com/TINGCYGF/vue3-ting-ui" class="git">码 云</a>
        <a target="_blank" href="https://github.com/TINGCYGF/vue3-ting-ui">GitHub</a>
-       <router-link to="/doc">开始</router-link>
+       <router-link to="/doc">开 始</router-link>
      </p>
    </div>
 
@@ -53,15 +54,15 @@ $buttonColor: rgb(52, 176, 176);
 $textColor: rgb(29, 110, 94);
 
 .home {
-  ::v-deep(.top_nav) {
-    background: transparent;
-  }
-
-  @media (max-width: 500px) {
-    ::v-deep(.top_nav) {
-      background: #fff;
-    }
-  }
+  //::v-deep(.top_nav) {
+  //  background: transparent;
+  //}
+  //
+  //@media (max-width: 500px) {
+  //  ::v-deep(.top_nav) {
+  //    background: #fff;
+  //  }
+  //}
 
   .banner {
     padding: 180px 0 150px;
@@ -83,7 +84,6 @@ $textColor: rgb(29, 110, 94);
       font-size: 20px;
       line-height: 26px;
     }
-
     > .actions {
       padding: 8px 0;
       font-size: 18px;
@@ -103,6 +103,23 @@ $textColor: rgb(29, 110, 94);
       }
 
     }
+    @media (max-width: 800px) {
+      > .actions {
+        display: block;
+        margin: 16px auto 0;
+        width: 180px;
+        padding: 8px 0;
+        font-size: 18px;
+        text-align: center;
+        >a{
+          display: inline-block;
+          min-width: 8em;
+          margin: 6px;
+          padding: 10px;
+        }
+      }
+    }
+
   }
 
   .features {
@@ -114,7 +131,6 @@ $textColor: rgb(29, 110, 94);
       h3 {
         font-size: 16px;
       }
-
       p {
         font-size: 14px;
       }
