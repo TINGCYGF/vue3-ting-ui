@@ -1,27 +1,82 @@
-# Vue 3 + Typescript + Vite
+# 开始
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
 
-## Recommended IDE Setup
+**欢迎使用 [Ting UI](https://tingcygf.gitee.io/ting-ui-vue3/#/)**
 
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
 
-### If Using `<script setup>`
+## 介绍
 
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
+Ting UI 是一个简洁的前端 UI 框架，基于 vue3.0 的开源 UI 组件库, 由[Ting](https://github.com/TINGCYGF) 开发使用`vite2` `vue3.0` `typescript`搭建。<br>
+Ting UI框架主要用于学习vue3.0新特性，请勿用于生产环境！欢迎各位与作者[Ting](https://github.com/TINGCYGF) 交流学习<br><br>
+PS: 该文档网页适配**移动端**和**PC**
 
-## Type Support For `.vue` Imports in TS
+<br>
+<br>
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
 
-### If Using Volar
+> #### 版本:**_0.0.10_**
+>
+> - 更新内容: `初次完成简单组件`
 
-Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 
-### If Using Vetur
+<br>
 
-1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
-2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
-3. Open `src/main.ts` in VSCode
-4. Open the VSCode command palette
-5. Search and run "Select TypeScript version" -> "Use workspace version"
+# 安装
+
+打开终端运行下列命令：
+
+```
+npm install vue3-ting-ui
+```
+
+或
+
+```
+yarn add vue3-ting-ui
+```
+
+<br />
+
+# 快速使用
+
+### 完整引入
+
+```
+import 'vue3-ting-ui/dist/lib/ting.css'
+import { createApp } from 'vue'
+import App from './App.vue'
+import { TingUI } from 'vue3-ting-ui'
+
+const app = createApp(App)
+app.use(TingUI)
+app.mount('#app')
+```
+
+> 以上代码便完成了 Ting-ui 的引入。需要注意的是，样式文件需要单独引入。
+
+<br />
+
+### 按需引入
+
+> 如果你只希望引入部分组件，比如 Button ，那么需要在 main.js 中写入以下内容：
+
+```
+import 'vue3-ting-ui/dist/lib/ting.css'
+    import { createApp } from 'vue'
+    import { Button: t-button } from 'vue3-ting-ui'
+    import App from './App.vue'
+
+    createApp(App).use(t-button).mount('#app')
+```
+
+<br />
+
+
+
+
+
+
+
+
+
+
