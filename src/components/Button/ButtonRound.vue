@@ -1,24 +1,11 @@
 <demo>
-支持 round
+圆形边框
 </demo>
 <template>
-  <div>
-    <div>
-      <Button round>Click it</Button>
-      <Button level="primary" round>Click it</Button>
-      <Button level="success" round>Click it</Button>
-      <Button level="warning" round>Click it</Button>
-      <Button level="error" round>Click it</Button>
-    </div>
-  </div>
+  <t-button round>默认按键</t-button>
+  <t-button level="primary" round>主题按键</t-button>
+  <t-button level="success" round="true">成功按键</t-button>
+  <t-button level="warning" :round="true">警告按键</t-button>
+  <t-button level="error" :round=" 'true' ">危险按键</t-button>
 </template>
 
-<script lang="ts">
-import Button from "../../lib/Button/Button.vue";
-
-export default {
-  components: {
-    Button,
-  },
-};
-</script>

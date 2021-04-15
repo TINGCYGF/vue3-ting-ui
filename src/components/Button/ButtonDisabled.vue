@@ -1,18 +1,8 @@
 <demo>
-支持 disabled
+禁用状态
 </demo>
 <template>
-  <Button size="big" disabled>disabled Button</Button>
-  <Button round disabled>disabled Button</Button>
-  <Button size="small" disabled>disabled Button</Button>
-  <Button level="primary" round disabled loading>disabled Button</Button>
+  <t-button disabled>禁用状态</t-button>
+  <t-button level="primary" round disabled loading>禁用状态</t-button>
 </template>
 
-<script lang="ts">
-import Button from "../../lib/Button/Button.vue";
-export default {
-  components: {
-    Button,
-  },
-};
-</script>

@@ -1,20 +1,9 @@
 <demo>
-  支持 size
+  按钮大小
 </demo>
 <template>
-  <div>
-    <Button level="primary" size="big">大大大</Button>
-    <Button level="primary">普普通</Button>
-    <Button level="primary" size="small">小小小</Button>
-  </div>
+  <t-button level="primary" size="big">大按键</t-button>
+  <t-button level="primary">默认按键</t-button>
+  <t-button level="primary" size="small">小按键</t-button>
 </template>
 
-<script lang="ts">
-import Button from "../../lib/Button/Button.vue";
-
-export default {
-  components: {
-    Button,
-  },
-};
-</script>

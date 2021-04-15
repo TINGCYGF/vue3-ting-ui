@@ -11,18 +11,12 @@ export default defineComponent({
   setup(){
     const width = document.documentElement.clientWidth
     const asideVisible = ref(width > 500)//默认值
-    // router.beforeEach((to,from,next)=>{
-    //   progress.start()
-    //   next()
-    // })
+    provide('asideVisible', asideVisible)
     router.afterEach(() => {
       if (width <= 500) {
-        asideVisible.value = false;
+        menuVisible.value = false;
       }
-      progress.done()
-      window.scrollTo(0,0)
-    });
-    provide('asideVisible', asideVisible)
+    })
   }
 })
 </script>

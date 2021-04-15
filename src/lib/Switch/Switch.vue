@@ -37,6 +37,7 @@ export default {
 <style lang="scss">
 $h: 22px;
 $h2: $h - 4px;
+$ting-color: #4ff3d4;
 .ting-switch {
   position: relative;
   display: inline-block;
@@ -77,11 +78,10 @@ $h2: $h - 4px;
       height: 14px;
       display: inline-block;
       border-radius: 8px;
-      border-color: lighten(#8486ab, 20%) lighten(#8486ab, 10%) #8486ab
-      transparent;
+      border-color: lighten($ting-color, 20%) lighten($ting-color, 10%) $ting-color transparent;
       border-style: solid;
       border-width: 2px;
-      animation: kaite-spin 1s infinite linear;
+      animation: ting-spin 1s infinite linear;
     }
   }
   > p {
@@ -120,7 +120,7 @@ $h2: $h - 4px;
       }
     }
   }
-  @keyframes spin {
+  @keyframes ting-spin {
     0% {
       transform: rotate(0deg);
     }

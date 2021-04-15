@@ -13,8 +13,8 @@
            <slot name="content" />
          </main>
          <footer v-if="bottomBtn">
-           <Button level="primary" @click="ok">confirm</Button>
-           <Button @click="cancel">Cancel</Button>
+           <Button level="primary" @click="ok">确 定</Button>
+           <Button @click="cancel">取 消</Button>
          </footer>
        </div>
      </div>
@@ -71,7 +71,7 @@
         props.cancel && props.cancel(); // 等价于props.cancel?.()
         close();
       };
-      return {close, onClickOverlay, showTitle, ok, cancel}
+      return { close, onClickOverlay, showTitle, ok, cancel }
     }
   }
 

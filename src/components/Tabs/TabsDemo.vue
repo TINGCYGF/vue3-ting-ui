@@ -1,24 +1,47 @@
 <template>
-  <Tabs v-model:selected="TabFlag">
-    <Tab title="导航1">内容1</Tab>
-    <Tab title="导航2 -----">内容2</Tab>
-    <Tab title="导航3" disabled>内容3</Tab>
-  </Tabs>
+  <div class="ting-demo">
+    <h1>Tabs 导航栏切换</h1>
+
+    <RevealContainer :component="TabsNormal">
+      <p>
+        可以使用<code>v-model</code>绑定一个<code>Boolean</code>类型的变量到<code>Tabs</code>组件,指定默认<span>Tab</span>
+      </p>
+    </RevealContainer>
+    <RevealContainer :component="TabsDisabled">
+      <p>
+        可以使用<code>disabled</code>属性定义<code>Tab</code>组件禁止状态，它接受一个<code>Boolean</code>值。
+      </p>
+    </RevealContainer>
+  </div>
 </template>
-
-
 <script lang="ts">
-import Tabs from '../../lib/Tab/Tabs.vue'
-import Tab from '../../lib/Tab/Tab.vue'
+import RevealContainer from "../RevealContainer.vue";
+import TabsNormal from "./TabsNormal.vue";
+import TabsDisabled from "./TabsDisabled.vue";
+
 import { ref } from "vue";
 export default {
-  components: { Tabs, Tab },
+  components: { RevealContainer },
   setup() {
-    const TabFlag = ref("导航1");
     return {
-      TabFlag,
+      TabsNormal,
+      TabsDisabled
     };
   },
-}
-
+};
 </script>
+
+<style lang="scss" scoped>
+.ting-demo{
+  max-width: 800px;
+  h1{
+    font-size: 28px;
+  }
+  code{
+    background-color: #e2fafa;
+    border-radius: 2px;
+    padding: 3px 5px;
+    margin: 0 3px;
+  }
+}
+</style>

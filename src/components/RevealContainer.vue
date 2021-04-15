@@ -2,6 +2,7 @@
   <div class="reveal-container">
     <h2>{{ component.__sourceCodeTitle }}</h2>
     <p>{{ description }}</p>
+    <div class="description"><slot/></div>
     <!--展示代码的地方-->
     <div class="fold-code" @mouseenter="enter" @mouseleave="leave">
       <div class="demo-wrapper">
@@ -40,7 +41,7 @@ export default {
     },
     description: {
       type: String,
-      default: '组件功能描述'
+      default: ''
     },
     component: {
       type: Object
@@ -92,14 +93,21 @@ export default {
 
 <style lang="scss" scoped>
 .reveal-container{
+  font-size: 14px;
+  color: #5e6d82;
   h2 {
     font-weight: 400;
     color: #1f2f3d;
     font-size: 22px;
     margin: 55px 0 20px;
   }
-
   p {
+    font-size: 14px;
+    color: #5e6d82;
+    line-height: 1.5em;
+    margin: 14px 0;
+  }
+  .description {
     font-size: 14px;
     color: #5e6d82;
     line-height: 1.5em;

@@ -1,19 +1,8 @@
 <demo>
-支持 loading
+加载状态
 </demo>
 <template>
-  <div>
-    <Button loading>Loading</Button>
-    <Button loading round>Loading</Button>
-  </div>
+  <t-button loading>加载状态</t-button>
+  <t-button loading round>加载状态</t-button>
 </template>
 
-<script lang="ts">
-import Button from "../../lib/Button/Button.vue";
-
-export default {
-  components: {
-    Button,
-  },
-};
-</script>

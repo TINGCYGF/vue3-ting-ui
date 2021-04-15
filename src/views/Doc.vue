@@ -132,7 +132,7 @@ export default {
     main {
       flex: 1;
       overflow: auto;
-      padding: 60px 180px;
+      padding: 60px 80px 60px 180px;
     }
   }
 }

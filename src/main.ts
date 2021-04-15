@@ -1,11 +1,15 @@
 import './assets/scss/index.scss'
 import './lib/ting.scss'
+import 'vue3-ting-ui/dist/lib/ting.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
-import {router} from './router'
+import { router } from './router'
+// @ts-ignore
+import { TingUI } from 'vue3-ting-ui'
 
 
 const app = createApp(App)
 app.use(router)
+app.use(TingUI)
 app.mount('#app')
