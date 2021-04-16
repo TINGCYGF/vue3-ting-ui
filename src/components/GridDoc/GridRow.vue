@@ -3,7 +3,7 @@
 </demo>
 <template>
 <div style="border: 1px solid darkmagenta">
-  <t-row gutter="40">
+  <t-row gutter="60">
     <t-col><div style="border: 1px solid red">2</div></t-col>
     <t-col><div style="border: 1px solid red">2</div></t-col>
     <t-col><div style="border: 1px solid red">2</div></t-col>
@@ -12,10 +12,12 @@
     <t-col span="12"><div style="border: 1px solid red">2</div></t-col>
     <t-col span="12"><div style="border: 1px solid red">2</div></t-col>
   </t-row>
-  <t-row>
-    <t-col span="1" offset="1">1</t-col>
-    <t-col span="2" offset="2">2</t-col>
+
+  <t-row gutter="20">
+    <t-col span="12"><div style="border: 1px solid red">2</div></t-col>
+    <t-col span="12"><div style="border: 1px solid red">2</div></t-col>
   </t-row>
+
 </div>
 </template>
 

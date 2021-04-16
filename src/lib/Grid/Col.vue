@@ -1,5 +1,5 @@
 <template>
-  <div class="ting-col" ref="aaa"
+  <div class="ting-col"
        :class="[`col-${span}`, offset && `offset-${offset}`]"
   >
     <slot></slot>
@@ -20,27 +20,7 @@ export default{
       type: [Number, String],
       required: false,
     },
-    gutter: {
-      type: [Number, String],
-      required: false,
-      default: 0
-    },
-
   },
-  data(){
-    return{
-      aaa: 0
-    }
-  },
-  methods:{
-    fn(){
-      // console.log('----------------')
-      // console.log(this.$refs.aaa)
-    }
-  },
-  mounted() {
-    this.fn()
-  }
 
 
 }
@@ -48,10 +28,7 @@ export default{
 
 <style lang="scss">
 .ting-col{
-  height: 100px;
-  //background: #00cec9;
-  width: 50%;
-  //border: 1px solid red;
+  height: 100%;
   $class-prefix: col-;
   @for $n from 1 through 24 {
     &.#{$class-prefix}#{$n}{
@@ -64,8 +41,6 @@ export default{
       margin-left: ($n / 24) * 100%;
     }
   }
-
-
 
 }
 </style>

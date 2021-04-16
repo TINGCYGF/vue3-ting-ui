@@ -26,10 +26,8 @@ export default{
         throw new Error("t-row 子标签必须是 t-col");
       }
     });
-
     return { colNodes }
   },
-
 
 }
 </script>
