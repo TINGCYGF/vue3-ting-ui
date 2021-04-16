@@ -1,8 +1,8 @@
 Arguments: 
-  D:\GZYJ\nodejs\node.exe D:\GZYJ\yarn\bin\yarn.js add @types/vue3-ting-ui --dev
+  D:\GZYJ\nodejs\node.exe D:\GZYJ\yarn\bin\yarn.js add vue3-ying-ui
 
 PATH: 
-  C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\GZYJ\nodejs\;D:\GZYJ\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;D:\GZYJ\yarn\bin\;D:\GZYJ\cmder;D:\GZWJ\phpstudy_pro\Extensions\php\php7.3.4nts;C:\ProgramData\ComposerSetup\bin;D:\TINGSQL\MongDb\bin;D:\TINGSQL\MongDb\mongo-tools\bin;C:\Users\Ting\AppData\Local\Microsoft\WindowsApps;D:\GZYJ\IDEA\IntelliJ IDEA 2019.3.3\bin;;D:\GZYJ\WebStorm 2020.3.2\bin;;D:\GZYJ\Microsoft VS Code\bin;C:\Users\Ting\AppData\Roaming\npm;C:\Users\Ting\AppData\Local\Yarn\bin;C:\Users\Ting\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code;D:\GZYJ\PhpStorm\bin;;C:\Users\Ting\AppData\Roaming\Composer\vendor\bin;
+  D:\GZYJ\Git\mingw64\bin;D:\GZYJ\Git\usr\bin;C:\Users\Ting\bin;D:\GZWJ\Web\Vue\vue3-ting-ui\node_modules\.bin;C:\Program Files (x86)\NetSarang\Xshell 6;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;D:\GZYJ\nodejs;D:\GZYJ\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn;C:\Program Files\Microsoft SQL Server\100\Tools\Binn;C:\Program Files\Microsoft SQL Server\100\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn;D:\GZYJ\yarn\bin;D:\GZYJ\cmder;D:\GZWJ\phpstudy_pro\Extensions\php\php7.3.4nts;C:\ProgramData\ComposerSetup\bin;D:\TINGSQL\MongDb\bin;D:\TINGSQL\MongDb\mongo-tools\bin;C:\Users\Ting\AppData\Local\Microsoft\WindowsApps;D:\GZYJ\IDEA\IntelliJ IDEA 2019.3.3\bin;D:\GZYJ\WebStorm 2020.3.2\bin;D:\GZYJ\Microsoft VS Code\bin;C:\Users\Ting\AppData\Roaming\npm;C:\Users\Ting\AppData\Local\Yarn\bin;C:\Users\Ting\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code;D:\GZYJ\PhpStorm\bin;C:\Users\Ting\AppData\Roaming\Composer\vendor\bin;D:\GZYJ\DevEco Studio 2.1.0.301\bin
 
 Yarn version: 
   1.22.5
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.npmjs.org/@types%2fvue3-ting-ui: Not found
+  Error: https://registry.npmjs.org/vue3-ying-ui: Not found
       at Request.params.callback [as _callback] (D:\GZYJ\yarn\lib\cli.js:66097:18)
       at Request.self.callback (D:\GZYJ\yarn\lib\cli.js:140749:22)
       at Request.emit (events.js:311:20)
@@ -28,8 +28,8 @@ Trace:
 
 npm manifest: 
   {
-    "name": "vue3-ting",
-    "version": "0.0.3",
+    "name": "vue3-ting-ui",
+    "version": "0.0.13",
     "files": [
       "dist/lib/*"
     ],
@@ -44,7 +44,7 @@ npm manifest:
       "prismjs": "^1.23.0",
       "vue": "^3.0.5",
       "vue-router": "4",
-      "vue3-ting-ui": "^0.0.3"
+      "vue3-ting-ui": "^0.0.10"
     },
     "devDependencies": {
       "@types/nprogress": "^0.2.0",
@@ -2097,6 +2097,17 @@ Lockfile:
     dependencies:
       unzipper latest
   
+  vue3-ting-ui@^0.0.10:
+    version "0.0.10"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.10.tgz#9084bac660a5a33e16b6c45777d48fcbca74f214"
+    integrity sha512-kxeDcwXjUosz4b37Ranhz1tHmmxzY+Z3gOlNf2FdbkfAtNeaBr/ADsOVDswvYMLRFwLQNnCc4yHPG64EOosb2w==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.9"
+  
   vue3-ting-ui@^0.0.2:
     version "0.0.2"
     resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.2.tgz#1a250d13994137972a947aca9ca0c9f07d3fcebf"
@@ -2117,6 +2128,50 @@ Lockfile:
       vue "^3.0.5"
       vue-router "4"
       vue3-ting-ui "^0.0.2"
+  
+  vue3-ting-ui@^0.0.6:
+    version "0.0.6"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.6.tgz#de9574f8d7587de2e08bb064859fde2ae9ce2735"
+    integrity sha512-3vBUZRqYnx+LwELW7pcs9QKsAriQcshHhYzJtN+VaUf4eRPBy6KnDZzen6foTqSND+txpzmy4rwWWWeAqL992Q==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.3"
+  
+  vue3-ting-ui@^0.0.7:
+    version "0.0.7"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.7.tgz#5b6575a008d716de559fa625e19285a608b1fe4c"
+    integrity sha512-XOZmEPz48Un4SyhpYbNGE3jIP76u0iKoTG/GVICQvioJ/Pn48pVAkTMsZoYHeN6EhPQz4XKEmG0fEPuflJM5QQ==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.6"
+  
+  vue3-ting-ui@^0.0.8:
+    version "0.0.8"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.8.tgz#059e39cf4839fe4ee0a9068f176b883327ba7c38"
+    integrity sha512-VXAhvZUOnyHIwkXRjMklSE2A66j5tMhR/zmF7XewPQHI6XEgbjY9lO0AObtqujoXkhwu9POEYEvk5FP+KsTAZA==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.7"
+  
+  vue3-ting-ui@^0.0.9:
+    version "0.0.9"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.9.tgz#ce6713ea4bba638ab7eed7bd097c1082c6046cbe"
+    integrity sha512-crKGD3i2GNRg/VhJi4S1bTlcVADsiYoM9KT7GS+ydwJiZAHcCMZDPVe1M3TvJMW2xwgkB+SNU8PWZZJ80nPnGw==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.8"
   
   vue@^3.0.5:
     version "3.0.7"
