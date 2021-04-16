@@ -5,7 +5,7 @@
     :class="{ 'checked': value }"
     :disabled="loading ? true : disabled"
   >
-    <span><span class="switch-loading" v-if="loading"></span></span>
+    <span><span class="ting-switch-loading" v-if="loading"></span></span>
     <p v-if="value" class="switch-on">on</p>
     <p v-else class="witch-off">off</p>
   </button>
@@ -73,9 +73,9 @@ $ting-color: #4ff3d4;
     border-radius: $h/2;
     background-color: #fff;
     transition: all 0.25s ease-in-out;
-    > .switch-loading {
-      width: 14px;
-      height: 14px;
+    > .ting-switch-loading {
+      width: 12px;
+      height: 12px;
       display: inline-block;
       border-radius: 8px;
       border-color: lighten($ting-color, 20%) lighten($ting-color, 10%) $ting-color transparent;
