@@ -3,7 +3,7 @@
     <div class="ting-tabs-nav" ref="container">
       <div
         class="ting-tabs-nav-item"
-        v-for="(tabNode, index) in tabsNodes"
+        v-for="(tabNode, index) in colNodes"
         :ref="
           (el) => {
             if (tabNode.props.title === selected) selectedItem = el;
@@ -61,9 +61,9 @@ export default {
       );
     });
     // 获取插槽结点
-    const tabsNodes = context.slots.default();
+    const colNodes = context.slots.default();
 
-    tabsNodes.forEach((tabNode) => {
+    colNodes.forEach((tabNode) => {
       // @ts-ignore
       if (tabNode.type.name !== Tab.name) {
         throw new Error("t-tabs 子标签必须是 t-tab");
@@ -71,7 +71,7 @@ export default {
     });
     // 返回当前选中结点
     const current = computed(() => {
-      return tabsNodes.find((tabNode) => tabNode.props.title === props.selected);
+      return colNodes.find((tabNode) => tabNode.props.title === props.selected);
     });
     // 处理点击事件，当有disabled属性时不更新选中结点，否则选中点击结点
     const select = (tabNode) => {
@@ -83,7 +83,7 @@ export default {
 
     return {
       current,
-      tabsNodes,
+      colNodes,
       select,
       selectedItem,
       indicator,
