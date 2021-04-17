@@ -5,6 +5,8 @@ import Tabs from "./Tab/Tabs.vue";
 import Tab from "./Tab/Tab.vue";
 import Input from "./Input/Input.vue";
 import Password from "./Input/Password.vue";
+import Row from "./Grid/Row.vue";
+import Col from "./Grid/Col.vue";
 
 
 import { ComponentOptions } from "vue";
@@ -19,5 +21,7 @@ export default {
     app.component("t-tabs", Tabs);
     app.component("t-input", Input);
     app.component("t-password", Password);
+    app.component("t-row", Row);
+    app.component("t-col", Col);
   },
 };

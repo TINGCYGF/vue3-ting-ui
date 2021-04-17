@@ -2049,6 +2049,28 @@ vue3-ting-ui@^0.0.13:
     vue-router "4"
     vue3-ting-ui "^0.0.10"
 
+vue3-ting-ui@^0.0.17:
+  version "0.0.17"
+  resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.17.tgz#c9d9868b80353fedb7515a65a6a380f83502d59d"
+  integrity sha512-KVlfw2jh+ebhCML8IQqAIWnmAtrSAy1rU+JJXv45mWEq0u0o/Bv5qk94g+/K1ObnIMybXXJCcfHthgsCiTh0XA==
+  dependencies:
+    github-markdown-css "^4.0.0"
+    prismjs "^1.23.0"
+    vue "^3.0.5"
+    vue-router "4"
+    vue3-ting-ui "^0.0.13"
+
+vue3-ting-ui@^0.0.18:
+  version "0.0.18"
+  resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.18.tgz#2d134c4c1a019422bc0443150109e63963d77393"
+  integrity sha512-WGRCVpcpUvd95legUHXxJZSdS5Py1+sRK5kfr/YxivmzI8kKQxQYKmFYbCfX2ZxeLIoXW7ZRkFq4IKkIMq2dCg==
+  dependencies:
+    github-markdown-css "^4.0.0"
+    prismjs "^1.23.0"
+    vue "^3.0.5"
+    vue-router "4"
+    vue3-ting-ui "^0.0.17"
+
 vue3-ting-ui@^0.0.2:
   version "0.0.2"
   resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.2.tgz#1a250d13994137972a947aca9ca0c9f07d3fcebf"

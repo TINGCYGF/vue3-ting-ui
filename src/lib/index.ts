@@ -6,6 +6,9 @@ export { default as Tab } from "./Tab/Tab.vue";
 export { default as Dialog } from "./Dialog/Dialog.vue";
 export { default as Input } from "./Input/Input.vue";
 export { default as Password } from "./Input/Password.vue";
+export { default as Row } from "./Grid/Row.vue";
+export { default as Col } from "./Grid/Col.vue";
+
 
 export { openDialog as openDialog } from "./Dialog/openDialog";
 export { default as TingUI } from "./TingUI";
