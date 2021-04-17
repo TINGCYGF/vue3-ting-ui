@@ -36,7 +36,6 @@
 </template>
 
 <style scoped>
-
 .dark {
   background: rgb(175, 229, 229);
 }

@@ -7,6 +7,8 @@ import DialogDemo from './components/DialogDoc/DialogDemo.vue'
 import TabsDemo from './components/TabsDoc/TabsDemo.vue'
 import InputDemo from "./components/InputDoc/InputDemo.vue";
 import GridDemo from "./components/GridDoc/GridDemo.vue";
+import LayoutDemo from "./components/LayoutDoc/LayoutDemo.vue";
+
 import Intro from "./views/markdown/intro.md";
 import Install from "./views/markdown/install.md";
 import GetStarted from "./views/markdown/get-started.md";
@@ -30,7 +32,9 @@ export const router = createRouter({
       {path: 'dialog', component: DialogDemo},
       {path: 'tabs', component: TabsDemo},
       {path: 'input', component: InputDemo},
-      {path: 'grid', component: GridDemo}
-    ]}
+      {path: 'grid', component: GridDemo},
+      {path: 'layout', component: LayoutDemo},
+
+      ]}
   ]
 })

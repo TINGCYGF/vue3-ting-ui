@@ -1,32 +1,37 @@
 <template>
-  <div class="layout" :class="layoutClass">
-    <slot></slot>
+  <div class="ting-layout-wrapper" :class="layoutClass">
+    <component
+      v-for="(colNode, index) in colNodes"
+      :key="index"
+      :is="colNode"
+    />
   </div>
 </template>
 
 <script>
+import Sider from "./Sider.vue";
+import {ref} from "vue";
 export default {
-  data(){
-    return{
-      layoutClass:{
-        hasSider:false
+  name: 't-layout',
+  setup(props, context){
+    const layoutClass = ref({hasSider: false})
+    const colNodes = context.slots.default();
+    colNodes.forEach((tabNode) => {
+      // @ts-ignore
+      console.log(tabNode.type.name)
+      if (tabNode.type.name === Sider.name) {
+        layoutClass.value.hasSider = true
       }
-    }
+    });
+    return { colNodes, layoutClass}
   },
-  mounted() {
-    this.$children.forEach((vm)=>{
-      if(vm.$options.name === 'IceSider'){
-        this.layoutClass.hasSider = true
-      }
-    })
-  }
 }
 </script>
-<style scoped lang="scss">
-.layout{
+<style lang="scss">
+.ting-layout-wrapper{
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   &.hasSider{
     flex-direction: row;
   }
