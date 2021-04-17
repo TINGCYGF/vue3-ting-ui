@@ -1,5 +1,5 @@
 <template>
-  <div class="ting-col ting"
+  <div class="ting-col"
        :class="colClass"
   >
     <slot></slot>
@@ -43,7 +43,6 @@ export default{
       if (!obj) {
         return []
       }
-      console.log(obj)
       let array = []
       if (obj.span) {
         array.push(`col-${str}${obj.span}`)
