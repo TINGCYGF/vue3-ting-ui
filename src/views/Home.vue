@@ -54,15 +54,15 @@ $buttonColor: rgb(52, 176, 176);
 $textColor: rgb(29, 110, 94);
 
 .home {
-  //::v-deep(.top_nav) {
-  //  background: transparent;
-  //}
-  //
-  //@media (max-width: 500px) {
-  //  ::v-deep(.top_nav) {
-  //    background: #fff;
-  //  }
-  //}
+  ::v-deep(.top_nav) {
+    background: transparent;
+  }
+
+  @media (max-width: 500px) {
+    ::v-deep(.top_nav) {
+      background: #fff;
+    }
+  }
 
   .banner {
     padding: 180px 0 150px;
@@ -104,6 +104,10 @@ $textColor: rgb(29, 110, 94);
 
     }
     @media (max-width: 800px) {
+      padding: 126px 0 100px;
+      background: linear-gradient(135deg, rgb(209, 238, 238) 0%, rgb(1, 171, 166) 100%);
+      clip-path: ellipse(80% 50% at 50% 40%);
+
       > .actions {
         display: block;
         margin: 16px auto 0;
@@ -124,9 +128,10 @@ $textColor: rgb(29, 110, 94);
 
   .features {
 
-    margin: 64px auto;
+    margin: 24px auto;
     width: 300px;
     @media (min-width: 800px) {
+      margin: 64px auto;
       width: 800px;
       h3 {
         font-size: 16px;

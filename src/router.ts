@@ -21,16 +21,16 @@ export const router = createRouter({
   routes: [
     {path: '/', component: Home},
     {path: '/doc', component: Doc, children: [
-        {path: '/', redirect: "/doc/intro"},
-        {path: 'intro', component: md(Intro)},
-        {path: 'install', component: md(Install)},
-        {path: 'get-started', component: md(GetStarted)},
-        {path: 'switch', component: SwitchDemo},
-        {path: 'button', component: ButtonDemo},
-        {path: 'dialog', component: DialogDemo},
-        {path: 'tabs', component: TabsDemo},
-        {path: 'input', component: InputDemo},
-        {path: 'grid', component: GridDemo}
-      ]}
+      {path: '', redirect: "/doc/intro"},
+      {path: 'intro', component: md(Intro)},
+      {path: 'install', component: md(Install)},
+      {path: 'get-started', component: md(GetStarted)},
+      {path: 'switch', component: SwitchDemo},
+      {path: 'button', component: ButtonDemo},
+      {path: 'dialog', component: DialogDemo},
+      {path: 'tabs', component: TabsDemo},
+      {path: 'input', component: InputDemo},
+      {path: 'grid', component: GridDemo}
+    ]}
   ]
 })

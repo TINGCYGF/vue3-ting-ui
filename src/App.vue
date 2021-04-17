@@ -14,7 +14,7 @@ export default defineComponent({
     provide('asideVisible', asideVisible)
     router.afterEach(() => {
       if (width <= 500) {
-        menuVisible.value = false;
+        asideVisible.value = false;
       }
     })
   }
