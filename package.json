@@ -1,6 +1,6 @@
 {
   "name": "vue3-ting-ui",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "files": [
     "dist/lib/*"
   ],
@@ -20,7 +20,7 @@
     "prismjs": "^1.23.0",
     "vue": "^3.0.5",
     "vue-router": "4",
-    "vue3-ting-ui": "^0.0.18"
+    "vue3-ting-ui": "^0.0.20"
   },
   "devDependencies": {
     "@types/nprogress": "^0.2.0",

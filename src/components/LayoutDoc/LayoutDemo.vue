@@ -4,63 +4,27 @@
 
     <RevealContainer :component="LayoutBase">
       <p>
-        区域按照 24 等分的原则进行划分,可以使用<code>span</code>属性来定义区域占比。
+        布局容器，其下可嵌套<code>t-header</code><code>t-sider</code><code>t-content</code><code>t-footer</code> 或<code>t-layout</code>本身，可以放在任何父容器中。
       </p>
     </RevealContainer>
 
     <RevealContainer :component="LayoutSider">
       <p>
-        区域按照 24 等分的原则进行划分,可以使用<code>span</code>属性来定义区域占比。
+        侧边栏由<code>t-layout</code>嵌套<code>t-sider</code>生成。
       </p>
     </RevealContainer>
-
-
-    <Attr :data="data"></Attr>
   </div>
 </template>
 <script lang="ts">
 import RevealContainer from "../RevealContainer.vue";
-import Attr from "../Attr.vue";
 import LayoutBase from "./LayoutBase.vue"
 import LayoutSider from "./LayoutSider.vue"
 export default {
   components: { RevealContainer, Attr },
   setup() {
-    const data = [
-      {
-        params: 'span',
-        desc: '栅格占比',
-        type: 'number',
-        select: '1~24',
-        default: '24',
-      },
-      {
-        params: 'gutter',
-        desc: '等间间隙',
-        type: 'number',
-        select: 'number',
-        default: '0',
-      },
-      {
-        params: 'offset',
-        desc: '左间隔占比',
-        type: 'number',
-        select: '1~24',
-        default: '0',
-      },
-      {
-        params: '直接写span, offset',
-        desc: '屏幕宽度小于577px',
-        type: 'number',
-        select: '1~24',
-        default: 'undefined',
-      },
-
-    ]
     return {
       LayoutBase,
       LayoutSider,
-      data
     };
   },
 };

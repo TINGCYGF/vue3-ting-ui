@@ -12,24 +12,6 @@
   </t-layout>
 </template>
 
-<script>
-import Layout from "../../lib/Layout/Layout.vue";
-import Content from "../../lib/Layout/Content.vue";
-import Footer from "../../lib/Layout/Footer.vue";
-import Header from "../../lib/Layout/Header.vue";
-import Sider from "../../lib/Layout/Sider.vue";
-
-export default {
-  components: {
-    't-layout': Layout,
-    't-content': Content,
-    't-footer': Footer,
-    't-header': Header,
-    't-sider': Sider
-  }
-}
-</script>
-
 <style lang="scss" scoped>
 .layout{
   height: 220px;
