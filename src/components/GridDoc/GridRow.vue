@@ -2,23 +2,37 @@
   基础使用
 </demo>
 <template>
-<div style="border: 1px solid darkmagenta">
-  <t-row gutter="60">
-    <t-col><div style="border: 1px solid red">2</div></t-col>
-    <t-col><div style="border: 1px solid red">2</div></t-col>
-    <t-col><div style="border: 1px solid red">2</div></t-col>
-  </t-row>
-  <t-row gutter="20">
-    <t-col span="12"><div style="border: 1px solid red">2</div></t-col>
-    <t-col span="12"><div style="border: 1px solid red">2</div></t-col>
+  <t-row>
+    <t-col><div class=" dark"></div></t-col>
   </t-row>
 
-  <t-row gutter="20">
-    <t-col span="12"><div style="border: 1px solid red">2</div></t-col>
-    <t-col span="12"><div style="border: 1px solid red">2</div></t-col>
+  <t-row>
+    <t-col span="12"><div class="bg"></div></t-col>
+    <t-col span="12"><div class="light"></div></t-col>
   </t-row>
 
-</div>
+  <t-row>
+    <t-col span="8"><div class="bg"></div></t-col>
+    <t-col span="8"><div class="light"></div></t-col>
+    <t-col span="8"><div class="bg"></div></t-col>
+  </t-row>
+
+  <t-row>
+    <t-col span="6"><div class="bg"></div></t-col>
+    <t-col span="6"><div class="light"></div></t-col>
+    <t-col span="6"><div class="bg"></div></t-col>
+    <t-col span="6"><div class="light"></div></t-col>
+  </t-row>
+
+  <t-row>
+    <t-col span="4"><div class="bg"></div></t-col>
+    <t-col span="4"><div class="light"></div></t-col>
+    <t-col span="4"><div class="bg"></div></t-col>
+    <t-col span="4"><div class="light"></div></t-col>
+    <t-col span="4"><div class="bg"></div></t-col>
+    <t-col span="4"><div class="light"></div></t-col>
+  </t-row>
+
 </template>
 
 <script lang="ts">
@@ -31,3 +45,20 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+.dark {
+  background: rgb(175, 229, 229);
+}
+.bg {
+  background: rgb(218, 255, 255);
+}
+.light {
+  background: rgb(252, 252, 252);
+}
+div {
+  min-height: 36px;
+  margin-top: 2px ;
+}
+</style>

@@ -35,6 +35,6 @@ export default{
 <style lang="scss">
   .ting-row{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 </style>
