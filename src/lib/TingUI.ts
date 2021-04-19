@@ -14,7 +14,7 @@ import Header from "./Layout/Header.vue";
 import Footer from "./Layout/Footer.vue";
 
 
-import { ComponentOptions } from "vue";
+import { ComponentOptions, } from "vue";
 
 export default {
   install: (app: ComponentOptions) => {
@@ -33,5 +33,7 @@ export default {
     app.component("t-sider", Sider);
     app.component("t-header", Header);
     app.component("t-footer", Footer);
+
+
   },
 };
