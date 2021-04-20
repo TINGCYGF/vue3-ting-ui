@@ -8,7 +8,8 @@ import App from './App.vue'
 import { router } from './router'
 // @ts-ignore
 import { TingUI } from 'vue3-ting-ui'
-import {TingPlugin} from "./lib";
+// @ts-ignore
+import { TingPlugin } from "vue3-ting-ui";
 
 
 const app = createApp(App)

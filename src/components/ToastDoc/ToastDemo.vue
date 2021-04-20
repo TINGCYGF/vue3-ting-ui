@@ -52,7 +52,7 @@ export default {
         desc: '弹出时间',
         type: 'number',
         select: 'number',
-        default: '5',
+        default: '2',
       },
       {
         params: 'closeButton',

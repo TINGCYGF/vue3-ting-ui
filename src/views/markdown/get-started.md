@@ -10,6 +10,7 @@ import { TingUI } from 'vue3-ting-ui'
 
 const app = createApp(App)
 app.use(TingUI)
+app.use(TingPlugin) 
 app.mount('#app')
 ```
 
