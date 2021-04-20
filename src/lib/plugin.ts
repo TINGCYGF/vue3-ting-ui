@@ -1,44 +1,67 @@
 import Toast from "./Toast/Toast.vue"
-import {render, defineComponent, onMounted, getCurrentInstance, createApp, resolveDynamicComponent} from "vue";
-
+import {
+  defineComponent,
+  createApp,
+  ref, h
+} from "vue";
 
 // @ts-ignore
 let currentToast
 
 export default {
   // @ts-ignore
-  install(app, options){
-    app.config.globalProperties.$toast = function (message: any, toastOptions: any){
+  install(app){
+    app.config.globalProperties.$toast = function (message: any, toastOptions?: any){
       // @ts-ignore
-      if(currentToast){
+      if (currentToast) {
         // @ts-ignore
-        currentToast= null
+        let {toast, divEle} = currentToast
+        toast.unmount(divEle);
+        divEle.remove();
       }
+      let divEle = document.createElement("div");
+      document.body.appendChild(divEle)
       currentToast = createToast({
-        app,
+        divEle,
         message,
         propsData:toastOptions,
-        onClose:()=>{
-          currentToast = null
-        }
       })
     }
   }
 }
 // @ts-ignore  help函数内部调用
-function createToast({app,message,propsData,onClose}){
-   const toast = createApp({
-     extends: Toast,
-     props:propsData,
-     setup(props, context){
-       const close = onClose
-       const toastSlot = message
-       return {toastSlot, close}
-     }
-   })
-  console.log(toast);
-  const divEle = document.createElement("div");
-  document.body.appendChild(divEle)
+function createToast({divEle,message,propsData}){
+  const close = () => {
+    // @ts-ignore
+    toast.unmount(divEle);
+    divEle.remove();
+  };
+
+  const Constructor = defineComponent({
+    extends: Toast,
+    setup(){
+      let toastSlot = ref('提示内容')
+      toastSlot.value = message
+      return {toastSlot}
+    }
+  })
+  const toast = createApp({
+    render() {
+      return h(
+        Constructor,
+        {
+          visible: true,
+          // @ts-ignore
+          "onUpdate:visible": (newVisible) => {
+            if (newVisible === false) {
+              close();
+            }
+          },
+          ...propsData
+        },
+      );
+    },
+  });
   toast.mount(divEle)
-  return toast
+  return {toast, divEle}
 }
