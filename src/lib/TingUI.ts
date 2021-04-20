@@ -34,6 +34,5 @@ export default {
     app.component("t-header", Header);
     app.component("t-footer", Footer);
 
-
   },
 };
