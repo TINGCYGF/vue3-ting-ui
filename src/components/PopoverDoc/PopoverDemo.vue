@@ -1,12 +1,17 @@
 <template>
   <div class="ting-demo">
-    <h1>Toast 提示框</h1>
+    <h1>Popover 弹出提示</h1>
     <RevealContainer :component="PopoverBase">
       <p>
-        可以使用<code>position</code>属性定义<code>toast</code>弹出位置，可选择默认<code>top</code>or<code>middle</code><code>bottom</code>。
+        可以使用<code>position</code>属性定义<code>t-popover</code>组件弹出位置，可选择默认<code>top</code>or<code>right</code><code>bottom</code><code>left</code>。
       </p>
     </RevealContainer>
 
+    <RevealContainer :component="PopoverHover">
+      <p>
+        可以使用<code>trigger</code>属性定义<code>t-popover</code>组件触发方式，可选择默认<code>click</code>or<code>hover</code>。
+      </p>
+    </RevealContainer>
 
     <Attr :data="data"></Attr>
   </div>
@@ -15,6 +20,7 @@
 import RevealContainer from "../RevealContainer.vue";
 import Attr from "../Attr.vue";
 import PopoverBase from "./PopoverBase.vue"
+import PopoverHover from "./PopoverHover.vue"
 
 export default {
   components: { RevealContainer, Attr },
@@ -24,33 +30,20 @@ export default {
         params: 'position',
         desc: '弹出位置',
         type: 'string',
-        select: 'top / middle / bottom',
+        select: 'top / right / bottom / left',
         default: 'top',
       },
       {
-        params: 'autoClose',
-        desc: '弹出时间',
-        type: 'number',
-        select: 'number',
-        default: '2',
-      },
-      {
-        params: 'closeButton',
-        desc: '关闭按钮',
-        type: '{text, callback}',
-        select: '',
-        default: '{text:\'关闭\',callback:undefined}',
-      },
-      {
-        params: 'enableHtml',
-        desc: '支持HTML',
-        type: 'boolean',
-        select: 'true / false',
-        default: 'false',
+        params: 'trigger',
+        desc: '触发方式',
+        type: 'string',
+        select: 'click / hover',
+        default: 'click',
       },
     ]
     return {
       PopoverBase,
+      PopoverHover,
       data
     };
   },

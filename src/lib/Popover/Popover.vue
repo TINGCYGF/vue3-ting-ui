@@ -93,14 +93,12 @@ export default {
     }
     const close = () => {
       window.removeEventListener("scroll", close, true)
-      console.log("close");
       visible.value = false
       document.removeEventListener('click', onClickDocument)
     }
     //关闭popover  的事件
     const onClickDocument = (e) => {
       if (popover.value && (popover.value === e.target || popover.value.contains(e.target))) {
-        console.log("return");
         return
       }
       if (contentWrapper.value && (contentWrapper.value === e.target || contentWrapper.value.contains(e.target))) {
@@ -171,7 +169,7 @@ export default {
       left: 10px;
     }
     &::before {
-      border-bottom-color: black;
+      border-bottom-color: #1fd6c0;
       border-top: none;
       bottom: 100%
     }
@@ -189,7 +187,7 @@ export default {
       top: 50%;
     }
     &::before {
-      border-left-color: black;
+      border-left-color: #1fd6c0;
       border-right: none;
       left: 100%
     }
@@ -206,7 +204,7 @@ export default {
       top: 50%;
     }
     &::before {
-      border-right-color: black;
+      border-right-color: #1fd6c0;
       border-left: none;
       right: 100%
     }
