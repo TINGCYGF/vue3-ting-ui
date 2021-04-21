@@ -13,6 +13,8 @@ export { default as Footer } from "./Layout/Footer.vue";
 export { default as Header } from "./Layout/Header.vue";
 export { default as Content } from "./Layout/Content.vue";
 export { default as Sider } from "./Layout/Sider.vue";
+export { default as Popover } from "./Popover/Popover.vue";
+
 export { default as TingPlugin } from "./plugin";
 export { openDialog as openDialog } from "./Dialog/openDialog";
 export { default as TingUI } from "./TingUI";
