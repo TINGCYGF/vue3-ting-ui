@@ -145,9 +145,10 @@ export default {
     .per-content {
       background-color: #fafafa;
       border-top: 1px solid #eaeefb;
-      overflow: hidden;
+      overflow-y: hidden;
+      overflow-x: auto;
       height: 0;
-      transition: height .2s;
+      transition: height .25s;
     }
 
     .demo-block-control {

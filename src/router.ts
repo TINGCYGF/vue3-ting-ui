@@ -9,7 +9,7 @@ import InputDemo from "./components/InputDoc/InputDemo.vue";
 import GridDemo from "./components/GridDoc/GridDemo.vue";
 import LayoutDemo from "./components/LayoutDoc/LayoutDemo.vue";
 import ToastDemo from "./components/ToastDoc/ToastDemo.vue";
-
+import PopoverDemo from "./components/PopoverDoc/PopoverDemo.vue";
 import Intro from "./views/markdown/intro.md";
 import Install from "./views/markdown/install.md";
 import GetStarted from "./views/markdown/get-started.md";
@@ -36,6 +36,7 @@ export const router = createRouter({
       {path: 'grid', component: GridDemo},
       {path: 'layout', component: LayoutDemo},
       {path: 'toast', component: ToastDemo},
+      {path: 'popover', component: PopoverDemo},
 
       ]}
   ]

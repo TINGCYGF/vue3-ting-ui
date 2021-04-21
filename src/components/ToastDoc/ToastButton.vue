@@ -1,5 +1,5 @@
 <demo>
-自定义弹出事件
+自定义关闭按钮
 </demo>
 <template>
   <t-button @click="middle">中间弹出</t-button>
