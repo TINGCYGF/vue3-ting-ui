@@ -1,6 +1,6 @@
 <template>
   <div class="ting-collapse-item">
-    <div class="ting-collapse-title" @click="onClick">
+    <div class="ting-collapse-title" @click="onClick" :class="{'active': open,}">
       <Icon name="next" v-if="icon" />
       <span>{{title}}</span>
     </div>
@@ -37,6 +37,7 @@ export default {
         emitter.emit('update:removeSelected', props.name)
       }else {
         emitter.emit('update:addSelected', props.name)
+
       }
     }
     onMounted(() => {
@@ -62,7 +63,12 @@ export default {
       //border-bottom: none;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
+      &.active{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
     }
+
   }
   > .ting-collapse-title{
     vertical-align: middle;
