@@ -4,14 +4,15 @@
       <Icon name="next" v-if="icon" />
       <span>{{title}}</span>
     </div>
-    <div class="ting-collapse-content"><Spread :visible="open"><slot></slot></Spread></div>
+    <Spread :visible="open" class="ting-collapse-content"><slot></slot></Spread>
   </div>
 </template>
 
 <script lang="ts">
 import Icon from "../Icon/Icon.vue";
 import Spread from "../Icon/Spread.vue"
-import {ref} from 'vue'
+import emitter from '../tools/emitter.ts'
+import {ref, onMounted} from 'vue'
 export default {
   components: {Icon, Spread},
   name: "t-collapse-item",
@@ -25,15 +26,24 @@ export default {
       default: true
     },
     name:{
-      type: String,
+      type: [Number, String],
       require: true
-    }
+    },
   },
-  setup(props, context){
+  setup(props){
     const open = ref(false)
     const onClick = () => {
-      open.value = !open.value
+      if(open.value){
+        emitter.emit('update:removeSelected', props.name)
+      }else {
+        emitter.emit('update:addSelected', props.name)
+      }
     }
+    onMounted(() => {
+      emitter.on('update:selected', (names) => {
+        open.value = names.indexOf(props.name) >= 0;
+      })
+    })
     return {onClick, open}
   }
 }
@@ -72,6 +82,8 @@ export default {
   > .ting-collapse-content{
     font-size: 14px;
     color: #807c7c;
+    word-break: break-all;
+    padding: 4px;
   }
 
 }

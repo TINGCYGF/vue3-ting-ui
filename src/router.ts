@@ -13,6 +13,8 @@ import PopoverDemo from "./components/PopoverDoc/PopoverDemo.vue";
 import Intro from "./views/markdown/intro.md";
 import Install from "./views/markdown/install.md";
 import GetStarted from "./views/markdown/get-started.md";
+import CollapseDemo from "./components/CollapseDoc/CollapseDemo.vue";
+
 
 import { h } from "vue";
 import Markdown from "./components/Markdown.vue";
@@ -37,6 +39,7 @@ export const router = createRouter({
       {path: 'layout', component: LayoutDemo},
       {path: 'toast', component: ToastDemo},
       {path: 'popover', component: PopoverDemo},
+      {path: 'collapse', component: CollapseDemo},
 
       ]}
   ]

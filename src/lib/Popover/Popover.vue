@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts">
-import {ref, nextTick, onMounted, watchEffect} from "vue";
+import {ref, nextTick, onMounted} from "vue";
 
 export default {
   props: {

@@ -2,21 +2,26 @@
 基础使用
 </demo>
 <template>
-  <t-collapse>
-    <t-collapse-item title="标题1">内容111111111111111111111111111111111111111111111 11111111111111111111111111111</t-collapse-item>
-    <t-collapse-item title="标题2">内容22222222222222222222222222222222222222222222 222222222222222222222222222222</t-collapse-item>
-    <t-collapse-item title="标题3">内容3333333333333333333333333333333333333333333 3333333333333333333333333333333</t-collapse-item>
+  <t-collapse v-model:selected="selected">
+    <t-collapse-item title="标题1" name="1">内容</t-collapse-item>
+    <t-collapse-item title="标题2" name="2">内容</t-collapse-item>
+    <t-collapse-item title="标题3" name="3">内容</t-collapse-item>
   </t-collapse>
 </template>
 
 <script>
+import {ref} from "vue";
+
 import Collapse from "../../lib/Collapse/Collapse.vue"
 import CollapseItem from "../../lib/Collapse/CollapseItem.vue"
-
 export default {
   components: {
     't-collapse': Collapse,
     't-collapse-item': CollapseItem
+  },
+  setup(){
+    let selected = ref(['1', '2'])
+    return {selected}
   }
 }
 </script>

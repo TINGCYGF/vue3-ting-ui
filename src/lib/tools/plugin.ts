@@ -1,4 +1,4 @@
-import Toast from "./Toast/Toast.vue"
+import Toast from "../Toast/Toast.vue"
 import {
   defineComponent,
   createApp,

@@ -15,6 +15,6 @@ export { default as Content } from "./Layout/Content.vue";
 export { default as Sider } from "./Layout/Sider.vue";
 export { default as Popover } from "./Popover/Popover.vue";
 
-export { default as TingPlugin } from "./plugin";
+export { default as TingPlugin } from "./tools/plugin";
 export { openDialog as openDialog } from "./Dialog/openDialog";
 export { default as TingUI } from "./TingUI";
