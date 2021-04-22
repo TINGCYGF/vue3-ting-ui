@@ -1,8 +1,9 @@
 <demo>
-基础使用
+手风琴效果
 </demo>
 <template>
-  <t-collapse v-model:selected="selected">
+  <t-collapse v-model:selected="selected" single>
+
     <t-collapse-item title="《静夜思》李白" name="1">
       <pre>
 
@@ -10,6 +11,7 @@
       举头望明月，低头思故乡。
       </pre>
     </t-collapse-item>
+
     <t-collapse-item title="《登鹳雀楼》王之涣" name="2">
       <pre>
 
@@ -17,6 +19,7 @@
       欲穷千里目，更上一层楼。
       </pre>
     </t-collapse-item>
+
     <t-collapse-item title="《相思》王维" name="3">
       <pre>
 
@@ -24,6 +27,7 @@
       愿君多采撷，此物最相思。
       </pre>
     </t-collapse-item>
+
   </t-collapse>
 </template>
 
@@ -31,7 +35,7 @@
 import {ref} from "vue";
 export default {
   setup(){
-    let selected = ref(['1', '2'])
+    let selected = ref(['1'])
     return {selected}
   }
 }

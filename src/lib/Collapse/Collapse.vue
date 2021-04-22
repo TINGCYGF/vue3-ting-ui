@@ -5,9 +5,10 @@
 </template>
 
 <script lang="ts">
-import {onMounted} from "vue";
-import emitter from '../tools/emitter.ts'
+import mitt from 'mitt';
+import {onMounted, provide} from "vue";
 export default {
+
   name: "t-collapse",
   props:{
     single: {
@@ -18,8 +19,10 @@ export default {
       type: Array,
     },
   },
+
   setup(props, context) {
-    console.log(props.selected);
+    const emitter: mitt.Emitter = mitt();
+    provide('emitter', emitter)
     onMounted(() => {
       emitter.emit('update:selected', props.selected)
       emitter.on('update:removeSelected', (name: any) => {
@@ -40,7 +43,6 @@ export default {
         context.emit('update:selected', selectedCopy)
         console.log(selectedCopy);
       })
-
 
     })
 

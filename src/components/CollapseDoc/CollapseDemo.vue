@@ -3,7 +3,13 @@
     <h1>Collapse 折叠面板</h1>
     <RevealContainer :component="CollapseBase">
       <p>
-        可以使用<code>position</code>属性定义<code>t-popover</code>组件弹出位置，可选择默认<code>top</code>or<code>right</code><code>bottom</code><code>left</code>。
+        可以使用<code>selected</code>属性定义<code>t-collapse</code>组件默认打开内容，它接收一个<code>Array</code>。根据子组件<code>name</code>属性标识，它接收一个<code>String</code>且唯一标识。
+      </p>
+    </RevealContainer>
+
+    <RevealContainer :component="CollapseSingle">
+      <p>
+        可以使用<code>single</code>属性定义<code>t-collapse</code>组件只打开一个内容，它接收一个<code>Boolean</code>值。
       </p>
     </RevealContainer>
 
@@ -14,28 +20,30 @@
 import RevealContainer from "../RevealContainer.vue";
 import Attr from "../Attr.vue";
 import CollapseBase from "./CollapseBase.vue"
+import CollapseSingle from "./CollapseSingle.vue"
 
 export default {
   components: { RevealContainer, Attr },
   setup() {
     const data = [
       {
-        params: 'position',
+        params: 'selected',
         desc: '弹出位置',
-        type: 'string',
-        select: 'top / right / bottom / left',
-        default: 'top',
+        type: 'array[string]',
+        select: '[name]',
+        default: '[]',
       },
       {
-        params: 'trigger',
-        desc: '触发方式',
-        type: 'string',
-        select: 'click / hover',
-        default: 'click',
+        params: 'single',
+        desc: '手风琴效果',
+        type: 'boolean',
+        select: 'true / false',
+        default: 'false',
       },
     ]
     return {
       CollapseBase,
+      CollapseSingle,
       data
     };
   },

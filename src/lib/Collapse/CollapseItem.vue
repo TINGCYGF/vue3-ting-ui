@@ -1,7 +1,7 @@
 <template>
   <div class="ting-collapse-item">
     <div class="ting-collapse-title" @click="onClick" :class="{'active': open,}">
-      <Icon name="next" v-if="icon" />
+      <Icon name="next" v-if="icon" class="ting-collapse-icon" :class="{'icon-active': open,}" />
       <span>{{title}}</span>
     </div>
     <Spread :visible="open" class="ting-collapse-content"><slot></slot></Spread>
@@ -11,8 +11,7 @@
 <script lang="ts">
 import Icon from "../Icon/Icon.vue";
 import Spread from "../Icon/Spread.vue"
-import emitter from '../tools/emitter.ts'
-import {ref, onMounted} from 'vue'
+import {ref, onMounted, inject } from 'vue'
 export default {
   components: {Icon, Spread},
   name: "t-collapse-item",
@@ -31,6 +30,7 @@ export default {
     },
   },
   setup(props){
+    const emitter = inject('emitter')
     const open = ref(false)
     const onClick = () => {
       if(open.value){
@@ -80,6 +80,12 @@ export default {
     padding: 0 4px;
     cursor: pointer;
     background-color: #f1ffff;
+    >.ting-collapse-icon{
+      transition: transform 250ms;
+    }
+    >.icon-active{
+      transform: rotateZ(90deg);
+    }
     >span{
       padding-left: 3px;
     }

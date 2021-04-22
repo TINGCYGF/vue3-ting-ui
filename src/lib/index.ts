@@ -14,6 +14,8 @@ export { default as Header } from "./Layout/Header.vue";
 export { default as Content } from "./Layout/Content.vue";
 export { default as Sider } from "./Layout/Sider.vue";
 export { default as Popover } from "./Popover/Popover.vue";
+export { default as Collapse } from "./Collapse/Collapse.vue";
+export { default as CollapseItem } from "./Collapse/CollapseItem.vue";
 
 export { default as TingPlugin } from "./tools/plugin";
 export { openDialog as openDialog } from "./Dialog/openDialog";

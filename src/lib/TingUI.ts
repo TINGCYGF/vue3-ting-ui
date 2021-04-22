@@ -13,6 +13,8 @@ import Sider from "./Layout/Sider.vue";
 import Header from "./Layout/Header.vue";
 import Footer from "./Layout/Footer.vue";
 import Popover from "./Popover/Popover.vue";
+import Collapse from "./Collapse/Collapse.vue";
+import CollapseItem from "./Collapse/CollapseItem.vue";
 
 
 import { ComponentOptions, } from "vue";
@@ -35,7 +37,8 @@ export default {
     app.component("t-header", Header);
     app.component("t-footer", Footer);
     app.component("t-popover", Popover);
-
+    app.component("t-collapse", Collapse);
+    app.component("t-collapse-item", CollapseItem);
 
   },
 };
