@@ -41,7 +41,6 @@ export default {
         }
         emitter.emit('update:selected', selectedCopy)
         context.emit('update:selected', selectedCopy)
-        console.log(selectedCopy);
       })
 
     })

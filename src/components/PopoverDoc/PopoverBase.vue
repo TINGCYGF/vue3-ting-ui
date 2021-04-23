@@ -5,7 +5,7 @@
 
   <t-popover>
     <template v-slot:content>
-      <a href="https://github.com/Orange-ice/Ice-UI">这是个a链接</a>
+      <a href="https://gitee.com/TINGCYGF/ting-ui-vue3">这是个a链接</a>
     </template>
     <t-button>上方弹出</t-button>
   </t-popover>

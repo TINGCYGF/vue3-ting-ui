@@ -31,7 +31,7 @@
 import {ref} from "vue";
 export default {
   setup(){
-    let selected = ref(['1', '2'])
+    let selected = ref(['1', '2', '3'])
     return {selected}
   }
 }
