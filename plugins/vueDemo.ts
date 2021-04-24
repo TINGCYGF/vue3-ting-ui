@@ -2,6 +2,7 @@
 import fs from "fs";
 import {baseParse} from "@vue/compiler-core";
 
+
 export const vueDemoPlugin = {
   name: 'vite-plugin-vue-demo',
   transform(code, id) {
