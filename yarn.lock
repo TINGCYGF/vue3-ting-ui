@@ -2215,6 +2215,18 @@ vue3-ting-ui@^0.0.60:
     vue-router "4"
     vue3-ting-ui "^0.0.56"
 
+vue3-ting-ui@^0.0.61:
+  version "0.0.61"
+  resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.61.tgz#3cbf048f40735b88515a8d567cfe238a3e636baa"
+  integrity sha512-tEWETgMJ4TyllEUQzkfHm9mUB2RasLl20mkWYYkB8a/FXbLpI1eNl5RIombthuHvqXy/W/Tn47r6w94MGPiWiA==
+  dependencies:
+    github-markdown-css "^4.0.0"
+    mitt "^2.1.0"
+    prismjs "^1.23.0"
+    vue "^3.0.5"
+    vue-router "4"
+    vue3-ting-ui "^0.0.60"
+
 vue3-ting-ui@^0.0.7:
   version "0.0.7"
   resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.7.tgz#5b6575a008d716de559fa625e19285a608b1fe4c"
@@ -2247,6 +2259,42 @@ vue3-ting-ui@^0.0.9:
     vue "^3.0.5"
     vue-router "4"
     vue3-ting-ui "^0.0.8"
+
+vue3-ting-ui@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.1.0.tgz#2308e2d0bff8b3799f0ad650a966c8ef797f1be2"
+  integrity sha512-zUWH0rQzQzyoMLdPnP6FFNK88oXz1EkwgAy+EAFjVh7HmFZdTM7Wrb/wYgIorCXB9kRgeTqfnHACsTA6smsQUw==
+  dependencies:
+    github-markdown-css "^4.0.0"
+    mitt "^2.1.0"
+    prismjs "^1.23.0"
+    vue "^3.0.5"
+    vue-router "4"
+    vue3-ting-ui "^0.0.61"
+
+vue3-ting-ui@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.1.1.tgz#d4ba771e78c4d2916e622d9bdee2be84a3874be3"
+  integrity sha512-+cjSYC+SdclvJjgqf8jtdSETFSF8FuvI+dCAG4DbVqNoBSz3lYXcKA+L86DXP6ngw8NmHiu8wV7FW04r4xd0Mw==
+  dependencies:
+    github-markdown-css "^4.0.0"
+    mitt "^2.1.0"
+    prismjs "^1.23.0"
+    vue "^3.0.5"
+    vue-router "4"
+    vue3-ting-ui "^0.1.0"
+
+vue3-ting-ui@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.1.2.tgz#32f8d7133050f062866c9b6bcaad6c877aac3833"
+  integrity sha512-ly0INvCYPIB6b8DPYfqXh5GOdxVk05j403RbN9jrLvgkPIW7+AXUjlbfrz72zP7K2XUDnz5JH0+yBPvacuCjig==
+  dependencies:
+    github-markdown-css "^4.0.0"
+    mitt "^2.1.0"
+    prismjs "^1.23.0"
+    vue "^3.0.5"
+    vue-router "4"
+    vue3-ting-ui "^0.1.1"
 
 vue@^3.0.5:
   version "3.0.7"

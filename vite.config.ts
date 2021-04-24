@@ -8,7 +8,7 @@ import { md } from './plugins/markdown'
 
 
 
-// https://vitejs.dev/config/
+// https://vitejs.dev/config//
 export default defineConfig({
   base: "./",
   assetsDir: "assets",
