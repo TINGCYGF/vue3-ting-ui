@@ -14,6 +14,7 @@ import Intro from "./views/markdown/intro.md";
 import Install from "./views/markdown/install.md";
 import GetStarted from "./views/markdown/get-started.md";
 import CollapseDemo from "./components/CollapseDoc/CollapseDemo.vue";
+import MenuDemo from "./components/MenuDoc/MenuDemo.vue";
 
 
 import { h } from "vue";
@@ -40,6 +41,8 @@ export const router = createRouter({
       {path: 'toast', component: ToastDemo},
       {path: 'popover', component: PopoverDemo},
       {path: 'collapse', component: CollapseDemo},
+      {path: 'menu', component: MenuDemo},
+
 
       ]}
   ]

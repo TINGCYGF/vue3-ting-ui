@@ -15,6 +15,9 @@ import Footer from "./Layout/Footer.vue";
 import Popover from "./Popover/Popover.vue";
 import Collapse from "./Collapse/Collapse.vue";
 import CollapseItem from "./Collapse/CollapseItem.vue";
+import Menu from "./Menu/Menu.vue";
+import MenuItem from "./Menu/MenuItem.vue";
+import SubMenu from "./Menu/SubMenu.vue";
 
 
 import { ComponentOptions, } from "vue";
@@ -39,6 +42,9 @@ export default {
     app.component("t-popover", Popover);
     app.component("t-collapse", Collapse);
     app.component("t-collapse-item", CollapseItem);
+    app.component("t-menu", Menu);
+    app.component("t-menu-item", MenuItem);
+    app.component("t-sub-menu", SubMenu);
 
   },
 };
