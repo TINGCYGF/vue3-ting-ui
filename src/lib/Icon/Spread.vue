@@ -1,6 +1,6 @@
 <template>
   <transition @before-enter="beforeEnter" @enter="enter" @after-enter="afterEnter" @before-leave="beforeLeave" @leave="leave" @after-leave="afterLeave">
-    <div class="x-spread" v-show="visible">
+    <div class="ting-spread" v-show="visible">
       <slot></slot>
     </div>
   </transition>
