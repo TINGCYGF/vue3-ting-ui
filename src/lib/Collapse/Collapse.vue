@@ -22,7 +22,7 @@ export default {
 
   setup(props, context) {
     const emitter: mitt.Emitter = mitt();
-    provide('emitter', emitter)
+    provide('tingCollapseEmitter', emitter)
     onMounted(() => {
       emitter.emit('update:selected', props.selected)
       emitter.on('update:removeSelected', (name: any) => {
