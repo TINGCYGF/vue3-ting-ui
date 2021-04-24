@@ -1,11 +1,18 @@
 <template>
   <div class="ting-demo">
-    <h1>Popover 弹出提示</h1>
+    <h1>Menu 菜单</h1>
     <RevealContainer :component="MenuBase">
       <p>
-        可以使用<code>position</code>属性定义<code>t-popover</code>组件弹出位置，可选择默认<code>top</code>or<code>right</code><code>bottom</code><code>left</code>。
+        可以使用<code>selected-index</code>属性获取菜单选择信息，也可以监听<code>selected-change</code>事件，必填<code>index</code>属性定义唯一标识。
       </p>
     </RevealContainer>
+
+    <RevealContainer :component="MenuVertical">
+      <p>
+        可以使用<code>vertical</code>属性定义为纵向菜单息，它接收一个<code>Boolean</code>值。
+      </p>
+    </RevealContainer>
+
 
 
     <Attr :data="data"></Attr>
@@ -15,28 +22,71 @@
 import RevealContainer from "../RevealContainer.vue";
 import Attr from "../Attr.vue";
 import MenuBase from "./MenuBase.vue"
-
+import MenuVertical from "./MenuVertical.vue";
 export default {
   components: { RevealContainer, Attr },
   setup() {
     const data = [
       {
-        params: 'position',
-        desc: '弹出位置',
+        params: 'selected-index',
+        desc: '选择信息',
         type: 'string',
-        select: 'top / right / bottom / left',
-        default: 'top',
+        select: 'name',
+        default: '',
       },
       {
-        params: 'trigger',
-        desc: '触发方式',
+        params: 'vertical',
+        desc: '纵向菜单',
+        type: 'boolean',
+        select: 'true / false',
+        default: 'false',
+      },
+      {
+        params: 'index',
+        desc: '子菜单的唯一标志，必填',
         type: 'string',
-        select: 'click / hover',
-        default: 'click',
+        select: '',
+        default: '',
+      },
+      {
+        params: 'name',
+        desc: '子菜单的名称，必填',
+        type: 'string',
+        select: '',
+        default: '',
+      },
+      {
+        params: 'open',
+        desc: '默认展开',
+        type: 'boolean',
+        select: 'true / false',
+        default: 'false',
+      },
+      {
+        params: 'index-change',
+        desc: '点击 item 时触发事件',
+        type: '',
+        select: '',
+        default: '',
+      },
+      {
+        params: 'name-change',
+        desc: '点击 item 时触发事件',
+        type: '',
+        select: '',
+        default: '',
+      },
+      {
+        params: 'path-change',
+        desc: '点击 item 时触发事件',
+        type: '',
+        select: '',
+        default: '',
       },
     ]
     return {
       MenuBase,
+      MenuVertical,
       data
     };
   },
