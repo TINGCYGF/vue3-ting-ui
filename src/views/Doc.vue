@@ -19,34 +19,37 @@
         <h2>组件列表</h2>
         <ul>
           <li>
-            <router-link to="/doc/switch">Switch 组件</router-link>
+            <router-link to="/doc/switch">Switch 开关</router-link>
           </li>
           <li>
-            <router-link to="/doc/button">Button 组件</router-link>
+            <router-link to="/doc/button">Button 按钮</router-link>
           </li>
           <li>
-            <router-link to="/doc/dialog">Dialog 组件</router-link>
+            <router-link to="/doc/dialog">Dialog 对话框</router-link>
           </li>
           <li>
-            <router-link to="/doc/tabs">Tabs 组件</router-link>
+            <router-link to="/doc/tabs">Tabs 导航切换</router-link>
           </li>
           <li>
-            <router-link to="/doc/input">Input 组件</router-link>
+            <router-link to="/doc/input">Input 输入框</router-link>
           </li>
           <li>
-            <router-link to="/doc/grid">Grid 组件</router-link>
+            <router-link to="/doc/grid">Grid 栅格</router-link>
           </li>
           <li>
-            <router-link to="/doc/layout">Layout 组件</router-link>
+            <router-link to="/doc/layout">Layout 布局</router-link>
           </li>
           <li>
-            <router-link to="/doc/toast">Toast 组件</router-link>
+            <router-link to="/doc/toast">Toast 提示框</router-link>
           </li>
           <li>
-            <router-link to="/doc/popover">Popover 组件</router-link>
+            <router-link to="/doc/popover">Popover 弹出框</router-link>
           </li>
           <li>
-            <router-link to="/doc/collapse">Collapse 组件</router-link>
+            <router-link to="/doc/collapse">Collapse 折叠面板</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/menu">Menu 菜单</router-link>
           </li>
         </ul>
 

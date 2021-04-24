@@ -16,6 +16,9 @@ export { default as Sider } from "./Layout/Sider.vue";
 export { default as Popover } from "./Popover/Popover.vue";
 export { default as Collapse } from "./Collapse/Collapse.vue";
 export { default as CollapseItem } from "./Collapse/CollapseItem.vue";
+export { default as Menu } from "./Menu/Menu.vue";
+export { default as MenuItem } from "./Menu/MenuItem.vue";
+export { default as SubMenu } from "./Menu/SubMenu.vue";
 
 export { default as TingPlugin } from "./tools/plugin";
 export { openDialog as openDialog } from "./Dialog/openDialog";
