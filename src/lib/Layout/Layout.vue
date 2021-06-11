@@ -18,7 +18,6 @@ export default {
     const colNodes = context.slots.default();
     colNodes.forEach((tabNode) => {
       // @ts-ignore
-      console.log(tabNode.type.name)
       if (tabNode.type.name === Sider.name) {
         layoutClass.value.hasSider = true
       }

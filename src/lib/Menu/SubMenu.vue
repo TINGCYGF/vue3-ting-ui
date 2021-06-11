@@ -38,7 +38,6 @@ export default {
     const vertical = ref(false)
     const clickable = ref(true)
     selfOpen.value = JSON.parse(JSON.stringify(props.open))
-    console.log(selfOpen.value, "打印selfOpen");
     let indexArr = ref()
     watchEffect(() =>{
       indexArr.value = props.index.split('-')

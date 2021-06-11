@@ -26,21 +26,11 @@ export default {
   },
   setup(){
     const columns = [
-      {
-        title: '属性',
-      },
-      {
-        title: '说明',
-      },
-      {
-        title: '类型',
-      },
-      {
-        title: '可选值',
-      },
-      {
-        title: '默认值',
-      },
+      {title: '属性'},
+      {title: '说明'},
+      {title: '类型'},
+      {title: '可选值'},
+      {title: '默认值'},
     ]
     return {columns}
   }

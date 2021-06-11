@@ -20,7 +20,6 @@ export default {
     }
   },
   setup(props){
-
     const vm = getCurrentInstance()
     const menuBus = inject("tingMenuEmitter")
     const active = ref(false)

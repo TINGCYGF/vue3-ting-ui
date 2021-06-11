@@ -15,7 +15,6 @@
             <router-link to="/doc/get-started">快速使用</router-link>
           </li>
         </ul>
-
         <h2>组件列表</h2>
         <ul>
           <li>
@@ -52,7 +51,6 @@
             <router-link to="/doc/menu">Menu 菜单</router-link>
           </li>
         </ul>
-
       </aside>
       <main><router-view /></main>
     </div>
@@ -60,11 +58,13 @@
 </template>
 <script lang="ts">
 import Topnav from "./Topnav.vue";
-import { inject, Ref } from 'vue'
+import {getCurrentInstance, inject, Ref} from 'vue'
 
 export default {
   components: {Topnav},
   setup(){
+    const vm = getCurrentInstance()
+    console.log(vm)
     const asideVisible = inject<Ref<boolean>>('asideVisible')
     return {asideVisible}
   }

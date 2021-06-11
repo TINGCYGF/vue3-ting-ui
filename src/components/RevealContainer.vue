@@ -8,6 +8,7 @@
       <div class="demo-wrapper">
         <component :is="component"></component>
       </div>
+      
       <div class="per-wrapper">
         <div class="per-content" :style="{height:height+'px'}">
           <div class="per-desc"></div>
@@ -134,7 +135,6 @@ export default {
 
     &:hover {
       box-shadow: 0 0 8px 0 rgba(232, 237, 250, .6), 0 2px 4px 0 rgba(232, 237, 250, .5);
-
       .down {
         transform: translateX(-35px);
       }

@@ -102,12 +102,11 @@ export default {
         return
       }
       if (contentWrapper.value && (contentWrapper.value === e.target || contentWrapper.value.contains(e.target))) {
-
         return
       }
       close()
     }
-    return {visible, triggerWrapper, contentWrapper, popover, close}
+    return {visible, triggerWrapper, contentWrapper, popover, close, onClickDocument}
   },
 
   beforeUnmount() {

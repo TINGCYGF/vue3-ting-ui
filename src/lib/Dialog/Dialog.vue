@@ -24,7 +24,7 @@
 
 <script lang="ts">
   import Button from "../Button/Button.vue";
-  import {computed} from "vue";
+  import { computed } from "vue";
   export default {
     props: {
       visible: {
@@ -155,6 +155,7 @@ $border-color: #d9d9d9;
     &::after {
       transform: translate(-50%, -50%) rotate(45deg);
     }
+
     @media (min-width: 500px) {
       &:hover {
         background-color: #f57272;

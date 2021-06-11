@@ -104,9 +104,9 @@ $textColor: rgb(29, 110, 94);
 
     }
     @media (max-width: 800px) {
-      padding: 126px 0 100px;
+      padding: 126px 0 20px;
       background: linear-gradient(135deg, rgb(209, 238, 238) 0%, rgb(1, 171, 166) 100%);
-      clip-path: ellipse(80% 50% at 50% 40%);
+      clip-path: ellipse(88% 68% at 50% 44%);
 
       > .actions {
         display: block;
@@ -128,7 +128,7 @@ $textColor: rgb(29, 110, 94);
 
   .features {
 
-    margin: 24px auto;
+    margin: 68px auto 24px;
     width: 300px;
     @media (min-width: 800px) {
       margin: 64px auto;
