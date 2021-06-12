@@ -31,7 +31,7 @@
 
     <RevealContainer :component="InputBase">
       <p>
-        可以使用<code>v-model</code>绑定一个<code>Boolean</code>类型的变量到<code>Tabs</code>组件,指定默认<span>Tab</span>
+        可以使用<code>t-password</code>组件实现展示隐藏密码
       </p>
     </RevealContainer>
     <Attr :data="data"></Attr>

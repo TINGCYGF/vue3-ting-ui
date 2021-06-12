@@ -22,6 +22,7 @@ import Markdown from "./components/Markdown.vue";
 const md = (string: any) => h(Markdown, { content: string, key: string });
 
 const history = createWebHashHistory()
+
 export const router = createRouter({
   history: history,
   routes: [
@@ -45,5 +46,11 @@ export const router = createRouter({
 
 
       ]}
-  ]
+  ],
+})
+router.afterEach((to, from) => {
+  let main = document.querySelector(".layout")
+  if (main && main.scrollTop !== 0) {
+    main.scrollTop = 0
+  }
 })

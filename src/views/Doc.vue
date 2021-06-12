@@ -52,19 +52,17 @@
           </li>
         </ul>
       </aside>
-      <main><router-view /></main>
+      <main class="document-main"><router-view /></main>
     </div>
   </div>
 </template>
 <script lang="ts">
 import Topnav from "./Topnav.vue";
-import {getCurrentInstance, inject, Ref} from 'vue'
+import { inject, Ref } from 'vue'
 
 export default {
   components: {Topnav},
   setup(){
-    const vm = getCurrentInstance()
-    console.log(vm)
     const asideVisible = inject<Ref<boolean>>('asideVisible')
     return {asideVisible}
   }

@@ -2,14 +2,14 @@
   <div class="ting-col"
        :class="colClass"
   >
-    <slot></slot>
+    <slot/>
   </div>
 </template>
 
 <script lang="ts">
-import {computed} from "vue";
+import { computed } from "vue";
 
-let validator = (value) => {
+let validator = (value: {}) => {
   let keys = Object.keys(value)
   let valid = true
   keys.forEach(key => {
@@ -38,8 +38,7 @@ export default{
     XL: {type: Object, validator}
   },
   setup(props){
-    const createClasses = (obj, str = '') => {
-
+    const createClasses = (obj: { span: any; offset: any; }, str = '') => {
       if (!obj) {
         return []
       }
