@@ -198,7 +198,5 @@ $grey: #909399;
       transform: rotate(360deg);
     }
   }
-
-
 }
 </style>

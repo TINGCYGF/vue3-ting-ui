@@ -29,7 +29,7 @@ export default {
       require: true
     },
   },
-  setup(props: { name: any; }){
+  setup(props){
     const emitter:any = inject('tingCollapseEmitter')
     const open = ref(false)
     const onClick = () => {
@@ -37,7 +37,6 @@ export default {
         emitter.emit('update:removeSelected', props.name)
       }else {
         emitter.emit('update:addSelected', props.name)
-
       }
     }
     onMounted(() => {
@@ -45,6 +44,7 @@ export default {
         open.value = names.indexOf(props.name) >= 0;
       })
     })
+
     return {onClick, open}
   }
 }

@@ -42,7 +42,6 @@ export default {
         emitter.emit('update:selected', selectedCopy)
         context.emit('update:selected', selectedCopy)
       })
-
     })
 
     return { }
@@ -54,6 +53,5 @@ export default {
 .ting-collapse{
   border: 1px solid #92b8b8;
   border-radius: 4px;
-
 }
 </style>
