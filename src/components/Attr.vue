@@ -51,6 +51,7 @@ export default {
   }
 
   .attr-table {
+    white-space: nowrap;
     width: 100%;
     border-collapse: collapse;
     background-color: #fff;

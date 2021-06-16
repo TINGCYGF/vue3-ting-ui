@@ -1,5 +1,5 @@
 Arguments: 
-  D:\GZYJ\nodejs\node.exe D:\GZYJ\yarn\bin\yarn.js add vue3-ying-ui
+  D:\GZYJ\nodejs\node.exe D:\GZYJ\yarn\bin\yarn.js add vui3-ting-ui
 
 PATH: 
   D:\GZYJ\Git\mingw64\bin;D:\GZYJ\Git\usr\bin;C:\Users\Ting\bin;D:\GZWJ\Web\Vue\vue3-ting-ui\node_modules\.bin;C:\Program Files (x86)\NetSarang\Xshell 6;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;D:\GZYJ\nodejs;D:\GZYJ\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn;C:\Program Files\Microsoft SQL Server\100\Tools\Binn;C:\Program Files\Microsoft SQL Server\100\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn;D:\GZYJ\yarn\bin;D:\GZYJ\cmder;D:\GZWJ\phpstudy_pro\Extensions\php\php7.3.4nts;C:\ProgramData\ComposerSetup\bin;D:\TINGSQL\MongDb\bin;D:\TINGSQL\MongDb\mongo-tools\bin;C:\Users\Ting\AppData\Local\Microsoft\WindowsApps;D:\GZYJ\IDEA\IntelliJ IDEA 2019.3.3\bin;D:\GZYJ\WebStorm 2020.3.2\bin;D:\GZYJ\Microsoft VS Code\bin;C:\Users\Ting\AppData\Roaming\npm;C:\Users\Ting\AppData\Local\Yarn\bin;C:\Users\Ting\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code;D:\GZYJ\PhpStorm\bin;C:\Users\Ting\AppData\Roaming\Composer\vendor\bin;D:\GZYJ\DevEco Studio 2.1.0.301\bin
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.npmjs.org/vue3-ying-ui: Not found
+  Error: https://registry.npmjs.org/vui3-ting-ui: Not found
       at Request.params.callback [as _callback] (D:\GZYJ\yarn\lib\cli.js:66097:18)
       at Request.self.callback (D:\GZYJ\yarn\lib\cli.js:140749:22)
       at Request.emit (events.js:311:20)
@@ -29,22 +29,26 @@ Trace:
 npm manifest: 
   {
     "name": "vue3-ting-ui",
-    "version": "0.0.13",
+    "version": "0.1.9",
     "files": [
       "dist/lib/*"
     ],
     "main": "dist/lib/ting.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/TINGCYGF/vue3-ting-ui"
+    },
+    "license": "MIT",
     "scripts": {
       "dev": "vite",
       "build": "vue-tsc --noEmit && vite build",
       "serve": "vite preview"
     },
     "dependencies": {
-      "github-markdown-css": "^4.0.0",
-      "prismjs": "^1.23.0",
-      "vue": "^3.0.5",
-      "vue-router": "4",
-      "vue3-ting-ui": "^0.0.10"
+      "mitt": "^2.1.0"
+    },
+    "peerDependencies": {
+      "vue": ">=3.0.5"
     },
     "devDependencies": {
       "@types/nprogress": "^0.2.0",
@@ -57,10 +61,15 @@ npm manifest:
       "rollup-plugin-scss": "^2.6.1",
       "rollup-plugin-terser": "^7.0.2",
       "rollup-plugin-vue": "^6.0.0",
+      "vue": "^3.0.5",
+      "vue-router": "4",
+      "vue3-ting-ui": "^0.1.6",
       "sass": "^1.32.8",
       "typescript": "^4.1.3",
       "vite": "^2.1.0",
-      "vue-tsc": "^0.0.8"
+      "vue-tsc": "^0.0.8",
+      "prismjs": "^1.23.0",
+      "github-markdown-css": "^4.0.0"
     }
   }
 
@@ -1206,6 +1215,11 @@ Lockfile:
     resolved "https://registry.npmjs.org/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
     integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
   
+  mitt@^2.1.0:
+    version "2.1.0"
+    resolved "https://registry.npmjs.org/mitt/-/mitt-2.1.0.tgz#f740577c23176c6205b121b2973514eade1b2230"
+    integrity sha512-ILj2TpLiysu2wkBbWjAmww7TkZb65aiQO+DkVdUTBpBXq+MHYiETENkKFMtsJZX1Lf4pe4QOrTSjIfUwN5lRdg==
+  
   "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1:
     version "0.5.5"
     resolved "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.5.tgz#d91cefd62d1436ca0f41620e251288d420099def"
@@ -2108,6 +2122,39 @@ Lockfile:
       vue-router "4"
       vue3-ting-ui "^0.0.9"
   
+  vue3-ting-ui@^0.0.13:
+    version "0.0.13"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.13.tgz#53f5158102d7bd44128bc42d48b4758ac4eb3ac1"
+    integrity sha512-Z/HCBjRryia6349biWjcK3sCC4MvJ1+X1uVVHbt02ePoCSR3/4I4D7JGtZ9fgaTZYe5QUqTDq/ooQhks/v49Ig==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.10"
+  
+  vue3-ting-ui@^0.0.17:
+    version "0.0.17"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.17.tgz#c9d9868b80353fedb7515a65a6a380f83502d59d"
+    integrity sha512-KVlfw2jh+ebhCML8IQqAIWnmAtrSAy1rU+JJXv45mWEq0u0o/Bv5qk94g+/K1ObnIMybXXJCcfHthgsCiTh0XA==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.13"
+  
+  vue3-ting-ui@^0.0.18:
+    version "0.0.18"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.18.tgz#2d134c4c1a019422bc0443150109e63963d77393"
+    integrity sha512-WGRCVpcpUvd95legUHXxJZSdS5Py1+sRK5kfr/YxivmzI8kKQxQYKmFYbCfX2ZxeLIoXW7ZRkFq4IKkIMq2dCg==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.17"
+  
   vue3-ting-ui@^0.0.2:
     version "0.0.2"
     resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.2.tgz#1a250d13994137972a947aca9ca0c9f07d3fcebf"
@@ -2117,6 +2164,29 @@ Lockfile:
       prismjs "^1.23.0"
       vue "^3.0.5"
       vue-router "4"
+  
+  vue3-ting-ui@^0.0.20:
+    version "0.0.20"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.20.tgz#b1ce89faaa02228ecf45b91108be5f6f30bb5891"
+    integrity sha512-Tw9KcSF/W96dKbyyB90E/7u6Xk3cYSCc9+F3WfX5KKq3CzhegCVhyRtO5duv6AfrUz1g+7y+w4mhknEPZZE1lA==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.18"
+  
+  vue3-ting-ui@^0.0.21:
+    version "0.0.21"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.21.tgz#147961fdffa9e568f59d1f22700e226354fd5b6d"
+    integrity sha512-A9mPnCzY/l4w1XtgBrn81c9e35zf5AeS8s1002bU30eyitCcbLUJFkajOBBpUYCBfiMRmf7wMMiZ3lXr0tAgHA==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      mitt "^2.1.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.20"
   
   vue3-ting-ui@^0.0.3:
     version "0.0.3"
@@ -2129,6 +2199,78 @@ Lockfile:
       vue-router "4"
       vue3-ting-ui "^0.0.2"
   
+  vue3-ting-ui@^0.0.30:
+    version "0.0.30"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.30.tgz#91d42f72b324a8479d03d520d6ab65022da74f92"
+    integrity sha512-MNblQ28k/HSgdiO1UrkR7CcMMvQwd8nteqk2UwX+SkTUjdjhxKp+nModYuuC+QG1McFVt8EA8LTqeqYyMP5Okg==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      mitt "^2.1.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.21"
+  
+  vue3-ting-ui@^0.0.50:
+    version "0.0.50"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.50.tgz#8d30f7ceb7101d6325c3e675a81f1444e8a278e8"
+    integrity sha512-v4hXgPX/p2+tirq8jevc2tcxzB2xC8cAL9W1PxwGCvn77Ny/oAEQTRbauHS29XUTGQfrzDXip7N1gkp10qFHtg==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      mitt "^2.1.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.30"
+  
+  vue3-ting-ui@^0.0.51:
+    version "0.0.51"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.51.tgz#5dc0071337580a8a7e7a42961a5c1dd5fb6205c9"
+    integrity sha512-3/ClzKBsyxLdYmuSIh5MNuRETa1CpxQMAGairJZCj8aQi/bdUe6NOCwDmUM0wCtKzem1u5lhDqw2P3ifX6s/0A==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      mitt "^2.1.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.50"
+  
+  vue3-ting-ui@^0.0.52:
+    version "0.0.52"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.52.tgz#aa0c285f73b4a797db0afc38676a8228d54c8152"
+    integrity sha512-dS0l5GIxAKRO1kYUESwLzM+5hu2rOqaQCRmUwzY84Ew06llkYOSGb+rqa7jU46HWdw+7LnBbH/6/kFNwgfORtw==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      mitt "^2.1.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.51"
+  
+  vue3-ting-ui@^0.0.53:
+    version "0.0.53"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.53.tgz#2f85fbf110d5cf04e342ce611054c52322b5ccec"
+    integrity sha512-UTQ3hwGDSWsoF47OtwerD0BEywpoSl3hVdg3LOHWleN4TJEcMRCHrJjBC3zYBCGDxYmj+BBRU1OyK+zmDe3J0A==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      mitt "^2.1.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.52"
+  
+  vue3-ting-ui@^0.0.56:
+    version "0.0.56"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.56.tgz#c17dd0d9efb4193879d18e44330d92d1d8c25a82"
+    integrity sha512-xZH5v1DOL3UBG2oSK6KcY2Cu5Dw4k+r5fFUF791gMf0+qWxqujy4egUn84JFeXnXkCfRa5kg87Q+53mPpKFUag==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      mitt "^2.1.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.53"
+  
   vue3-ting-ui@^0.0.6:
     version "0.0.6"
     resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.6.tgz#de9574f8d7587de2e08bb064859fde2ae9ce2735"
@@ -2139,6 +2281,30 @@ Lockfile:
       vue "^3.0.5"
       vue-router "4"
       vue3-ting-ui "^0.0.3"
+  
+  vue3-ting-ui@^0.0.60:
+    version "0.0.60"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.60.tgz#9378694e5124e7c55dade99c4f7c2761e347d5e1"
+    integrity sha512-Nl9QQZdY/CT/I2IktHeCQ8tQXL6cuh5bj7wrJ3iF9KAK1mXDifvnNeEYe/FPklQp+eQ6fRinJWeb2X4vMQK9qQ==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      mitt "^2.1.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.56"
+  
+  vue3-ting-ui@^0.0.61:
+    version "0.0.61"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.0.61.tgz#3cbf048f40735b88515a8d567cfe238a3e636baa"
+    integrity sha512-tEWETgMJ4TyllEUQzkfHm9mUB2RasLl20mkWYYkB8a/FXbLpI1eNl5RIombthuHvqXy/W/Tn47r6w94MGPiWiA==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      mitt "^2.1.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.60"
   
   vue3-ting-ui@^0.0.7:
     version "0.0.7"
@@ -2172,6 +2338,54 @@ Lockfile:
       vue "^3.0.5"
       vue-router "4"
       vue3-ting-ui "^0.0.8"
+  
+  vue3-ting-ui@^0.1.0:
+    version "0.1.0"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.1.0.tgz#2308e2d0bff8b3799f0ad650a966c8ef797f1be2"
+    integrity sha512-zUWH0rQzQzyoMLdPnP6FFNK88oXz1EkwgAy+EAFjVh7HmFZdTM7Wrb/wYgIorCXB9kRgeTqfnHACsTA6smsQUw==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      mitt "^2.1.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.0.61"
+  
+  vue3-ting-ui@^0.1.1:
+    version "0.1.1"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.1.1.tgz#d4ba771e78c4d2916e622d9bdee2be84a3874be3"
+    integrity sha512-+cjSYC+SdclvJjgqf8jtdSETFSF8FuvI+dCAG4DbVqNoBSz3lYXcKA+L86DXP6ngw8NmHiu8wV7FW04r4xd0Mw==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      mitt "^2.1.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.1.0"
+  
+  vue3-ting-ui@^0.1.2:
+    version "0.1.2"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.1.2.tgz#32f8d7133050f062866c9b6bcaad6c877aac3833"
+    integrity sha512-ly0INvCYPIB6b8DPYfqXh5GOdxVk05j403RbN9jrLvgkPIW7+AXUjlbfrz72zP7K2XUDnz5JH0+yBPvacuCjig==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      mitt "^2.1.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.1.1"
+  
+  vue3-ting-ui@^0.1.6:
+    version "0.1.6"
+    resolved "https://registry.npmjs.org/vue3-ting-ui/-/vue3-ting-ui-0.1.6.tgz#233ab772ef077f3a220bf4d6aff9a6de260461e1"
+    integrity sha512-XGtrb5Mi8jORAPmJ4jseVyZvUpLLRm1eGEJJqakg3ciuxosfQgqkG+DY7warzp0VOaQWyfKDpswvyO0WZfm5aw==
+    dependencies:
+      github-markdown-css "^4.0.0"
+      mitt "^2.1.0"
+      prismjs "^1.23.0"
+      vue "^3.0.5"
+      vue-router "4"
+      vue3-ting-ui "^0.1.2"
   
   vue@^3.0.5:
     version "3.0.7"

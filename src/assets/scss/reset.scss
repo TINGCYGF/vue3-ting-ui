@@ -140,7 +140,7 @@ li {
 
 ::-webkit-scrollbar {
   width: 5px;
-  height: 5px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track-piece {
@@ -149,7 +149,7 @@ li {
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  height: 5px;
+  height: 10px;
   background-color: rgb(4, 212, 207);
   -webkit-border-radius: 6px;
 }
