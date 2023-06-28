@@ -1,8 +1,8 @@
 # 开始
 
 
-**欢迎使用 [Ting UI](https://tingcygf.gitee.io/ting-ui-vue3/#/)**
-
+**欢迎使用 [Ting UI](https://ting-code.github.io/Ting-UI-Vue3/dist/index.html#/)**
+预览地址：https://ting-code.github.io/Ting-UI-Vue3/dist/index.html#/
 
 ## 介绍
 
